@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:oklch(96.5% 0.014 78)}
+a{color:#6f85d6;text-decoration:none}
+a:hover{color:#c9b8ec}
+</style>
+</helmet>
+
+<section style="padding:64px 56px 96px;font-family:'Figtree',Helvetica,sans-serif;color:#131826;display:flex;flex-direction:column;gap:44px;background:oklch(96.5% 0.014 78)">
+
+  <header style="display:flex;flex-direction:column;gap:10px;max-width:720px">
+    <div style="font-family:ui-monospace,Menlo,monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#8a92a0">x.d — pixel motif / thought bubble</div>
+    <h1 style="margin:0;font-size:34px;font-weight:600;letter-spacing:-0.02em">Pixel thought</h1>
+    <p style="margin:0;font-size:15px;line-height:1.6;color:#5c6b7a;text-wrap:pretty;max-width:56ch">A cloud-form thought bubble with two trailing beads, built from the logo square on a 30 × 26 module grid. Hue runs across the service palette from the leading edge to the tail.</p>
+  </header>
+
+  <div style="display:flex;gap:56px;align-items:flex-start;flex-wrap:wrap">
+
+    <figure style="margin:0;display:flex;flex-direction:column;gap:16px">
+      <div style="width:400px;aspect-ratio:30 / 26;display:grid;grid-template-columns:repeat(30,1fr);grid-template-rows:repeat(26,1fr);gap:{{ gapPx }}">
+        <sc-for list="{{ cells }}" as="c" hint-placeholder-count="400">
+          <div style="grid-area:{{ c.area }};background:{{ c.bg }};border-radius:{{ radiusPx }};box-shadow:inset 1px 1px 0 rgba(255,255,255,.5), inset -1px -1px 0 rgba(19,24,38,.06)"></div>
+        </sc-for>
+      </div>
+      <figcaption style="font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#8a92a0">400 px — feature</figcaption>
+    </figure>
+
+    <div style="display:flex;flex-direction:column;gap:36px">
+
+      <figure style="margin:0;display:flex;align-items:flex-end;gap:32px">
+        <div style="display:flex;flex-direction:column;gap:12px">
+          <div style="width:150px;aspect-ratio:30 / 26;display:grid;grid-template-columns:repeat(30,1fr);grid-template-rows:repeat(26,1fr);gap:1px">
+            <sc-for list="{{ cells }}" as="c" hint-placeholder-count="400">
+              <div style="grid-area:{{ c.area }};background:{{ c.bg }}"></div>
+            </sc-for>
+          </div>
+          <figcaption style="font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#8a92a0">150 px</figcaption>
+        </div>
+
+        <div style="display:flex;flex-direction:column;gap:12px">
+          <div style="width:76px;aspect-ratio:30 / 26;display:grid;grid-template-columns:repeat(30,1fr);grid-template-rows:repeat(26,1fr);gap:0">
+            <sc-for list="{{ cells }}" as="c" hint-placeholder-count="400">
+              <div style="grid-area:{{ c.area }};background:{{ c.bg }}"></div>
+            </sc-for>
+          </div>
+          <figcaption style="font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#8a92a0">76 px</figcaption>
+        </div>
+
+        <div style="display:flex;flex-direction:column;gap:12px">
+          <div style="width:38px;aspect-ratio:30 / 26;display:grid;grid-template-columns:repeat(30,1fr);grid-template-rows:repeat(26,1fr);gap:0">
+            <sc-for list="{{ cells }}" as="c" hint-placeholder-count="400">
+              <div style="grid-area:{{ c.area }};background:{{ c.bg }}"></div>
+            </sc-for>
+          </div>
+          <figcaption style="font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#8a92a0">38 px</figcaption>
+        </div>
+      </figure>
+
+      <div style="display:flex;flex-direction:column;gap:14px;max-width:420px">
+        <div style="font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#8a92a0">In use</div>
+        <div style="display:flex;align-items:center;gap:14px;padding:14px 18px;background:#fdfbf8;border:1px solid rgba(19,24,38,.08);border-radius:4px">
+          <div style="width:30px;aspect-ratio:30 / 26;display:grid;grid-template-columns:repeat(30,1fr);grid-template-rows:repeat(26,1fr);gap:0;flex:none">
+            <sc-for list="{{ cells }}" as="c" hint-placeholder-count="400">
+              <div style="grid-area:{{ c.area }};background:{{ c.bg }}"></div>
+            </sc-for>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:2px">
+            <div style="font-size:14px;font-weight:600">AI Value Diagnostic</div>
+            <div style="font-size:12px;color:#5c6b7a">Where the thinking gets structured</div>
+          </div>
+        </div>
+        <p style="margin:0;font-size:14px;line-height:1.6;color:#5c6b7a;text-wrap:pretty">The cloud is a union of five module-quantised lobes, so every edge lands on the grid. Tail beads can be dropped for a plain cloud. Below 48 px, set the gap to zero.</p>
+      </div>
+
+      <div style="display:flex;gap:10px;flex-wrap:wrap">
+        <sc-for list="{{ swatches }}" as="s" hint-placeholder-count="6">
+          <div style="display:flex;flex-direction:column;gap:6px;width:88px">
+            <div style="height:34px;background:{{ s.hex }};border-radius:2px"></div>
+            <div style="font-family:ui-monospace,Menlo,monospace;font-size:10.5px;color:#5c6b7a">{{ s.hex }}</div>
+          </div>
+        </sc-for>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;palette&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Full service palette&quot;,&quot;Cool — discover / govern&quot;,&quot;Warm — transform / enable&quot;,&quot;Single blush&quot;,&quot;Single mint&quot;],&quot;default&quot;:&quot;Full service palette&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Colour&quot;},&quot;hueSpread&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;min&quot;:0,&quot;max&quot;:100,&quot;step&quot;:5,&quot;unit&quot;:&quot;%&quot;,&quot;default&quot;:100,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Colour&quot;},&quot;animate&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Motion&quot;},&quot;cycleSpeed&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;min&quot;:0.3,&quot;max&quot;:6,&quot;step&quot;:0.1,&quot;unit&quot;:&quot;steps/s&quot;,&quot;default&quot;:1.4,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Motion&quot;},&quot;showTail&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Form&quot;},&quot;gap&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;min&quot;:0,&quot;max&quot;:6,&quot;unit&quot;:&quot;px&quot;,&quot;default&quot;:2,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Form&quot;},&quot;blockRadius&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;min&quot;:0,&quot;max&quot;:8,&quot;unit&quot;:&quot;px&quot;,&quot;default&quot;:0,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Form&quot;}}">
+const PALETTES = {
+  'Full service palette': ['#a8e0c8', '#cfe9d9', '#f7dcae', '#f3c896', '#f2b8b6', '#c9b8ec', '#a9b6e8'],
+  'Cool — discover / govern': ['#d7ecdf', '#a8e0c8', '#cfe9d9', '#c9b8ec', '#a9b6e8'],
+  'Warm — transform / enable': ['#fdf4e4', '#f7dcae', '#f3c896', '#f2b8b6', '#c9b8ec'],
+  'Single blush': ['#f2b8b6'],
+  'Single mint': ['#a8e0c8']
+};
+
+const COLS = 30, ROWS = 26;
+
+// cloud = union of lobes; beads trail to the lower left
+const CORE = [15.0, 8.6, 8.4, 5.0];   // cx, cy, rx, ry
+const LOBES = (() => {
+  const [cx, cy, rx, ry] = CORE;
+  const out = [];
+  for (let k = 0; k < 9; k++) {
+    const a = (k / 9) * Math.PI * 2 - Math.PI / 2;
+    out.push([cx + rx * Math.cos(a), cy + ry * Math.sin(a), 3.5]);
+  }
+  return out;
+})();
+const BEADS = [
+  [7.5, 18.5, 2.5],
+  [3.5, 22.5, 1.6]
+];
+
+class Component extends DCLogic {
+  state = { phase: 0 };
+
+  componentDidMount() { this.sync(); }
+  componentDidUpdate() { this.sync(); }
+  componentWillUnmount() { clearInterval(this._iv); }
+
+  sync() {
+    const on = this.props.animate ?? true;
+    const ms = Math.round(1000 / (this.props.cycleSpeed ?? 1.4));
+    if (!on) { clearInterval(this._iv); this._iv = null; return; }
+    if (this._iv && this._ms === ms) return;
+    clearInterval(this._iv);
+    this._ms = ms;
+    this._iv = setInterval(() => this.setState(s => ({ phase: s.phase + 1 })), ms);
+  }
+
+  inShape(x, y, withBeads) {
+    const hit = ([cx, cy, r]) => (x - cx) * (x - cx) + (y - cy) * (y - cy) <= r * r;
+    const [ccx, ccy, crx, cry] = CORE;
+    const dx = (x - ccx) / crx, dy = (y - ccy) / cry;
+    if (dx * dx + dy * dy <= 1) return true;
+    if (LOBES.some(hit)) return true;
+    return withBeads && BEADS.some(hit);
+  }
+  renderVals() {
+    const p = this.props;
+    const pal = PALETTES[p.palette] || PALETTES['Full service palette'];
+    const spread = p.hueSpread ?? 100;
+    const beads = p.showTail ?? true;
+    const kept = [];
+
+    for (let y = 0; y < ROWS; y++) {
+      for (let x = 0; x < COLS; x++) {
+        if (!this.inShape(x, y, beads)) continue;
+        kept.push({ x, y, t: (x / COLS) * 0.45 + (y / ROWS) * 0.55 });
+      }
+    }
+
+    // normalise the ramp across the mass that actually exists, so the palette spans end to end
+    const lo = Math.min(...kept.map(c => c.t)), hi = Math.max(...kept.map(c => c.t));
+    const span = (hi - lo) || 1;
+
+    const cells = kept.map(c => {
+      const n = (Math.abs(Math.sin((c.x + 1) * 12.9898 + (c.y + 1) * 78.233) * 43758.5453) % 1) - 0.5;
+      const raw = (1 - (c.t - lo) / span) * (spread / 100) + n * 0.05 + (1 - spread / 100) * 0.5;
+      const i = Math.max(0, Math.min(pal.length - 1, Math.round(raw * (pal.length - 1))));
+      const j = (i + this.state.phase) % pal.length;
+      return {
+        area: (c.y + 1) + ' / ' + (c.x + 1) + ' / ' + (c.y + 2) + ' / ' + (c.x + 2),
+        bg: pal[j]
+      };
+    });
+
+    return {
+      cells,
+      swatches: pal.map(hex => ({ hex })),
+      gapPx: (p.gap ?? 2) + 'px',
+      radiusPx: (p.blockRadius ?? 0) + 'px'
+    };
+  }
+}
+
+</script>
+</body>
+</html>

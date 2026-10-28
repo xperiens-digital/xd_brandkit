@@ -1,0 +1,12 @@
+.xd-checkbox:checked{background:var(--xd-ink)}
+.xd-checkbox:checked::after{content:'';position:absolute;left:5.5px;top:2px;width:5px;height:9px;border:solid var(--xd-tan);border-width:0 2px 2px 0;transform:rotate(45deg)}
+.xd-toggle::after{content:'';position:absolute;top:3px;left:3px;width:18px;height:18px;border-radius:50%;background:var(--xd-tan);transition:left .25s ease}
+.xd-toggle:checked{background:var(--xd-ink)}
+.xd-toggle:checked::after{left:23px}
+.xd-input:focus,.xd-textarea:focus{border-color:var(--xd-ink);box-shadow:0 0 0 3px rgba(19,24,38,.1)}
+.xd-btn-sweep{opacity:0}
+button:hover .xd-btn-sweep{opacity:1}
+.xd-btn-ghost-sweep{opacity:1}
+.xd-btn-ghost:hover .xd-btn-ghost-sweep{transform:scaleX(1)!important}
+a{color:var(--link-color)}
+a:hover{color:var(--link-hover)}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#fdfbf8}
+@keyframes xdHeroCycle{0%{opacity:0}3%{opacity:1}25%{opacity:1}28%{opacity:0}100%{opacity:0}}
+@keyframes xdGrainDrift{0%{transform:scale(1) translate(0,0);opacity:.5}50%{transform:scale(1.08) translate(-1.5%,1%);opacity:.62}100%{transform:scale(1) translate(0,0);opacity:.5}}
+@keyframes xdAmbientDrift{0%{transform:scale(1) translate(0,0) rotate(0deg);opacity:.5}50%{transform:scale(1.18) translate(-3%,2.5%) rotate(2deg);opacity:.68}100%{transform:scale(1) translate(0,0) rotate(0deg);opacity:.32}}
+@media (prefers-reduced-motion:reduce){*{animation:none !important}}
+a{color:#5c6b7a}a:hover{color:#131826}
+</style>
+</helmet>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<filter id="grainF"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch" result="n"><animate attributeName="baseFrequency" values="0.85;0.78;0.9;0.85" dur="10s" repeatCount="indefinite"></animate></feTurbulence><feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.9 0"></feColorMatrix></filter>
+</defs>
+</svg>
+
+<div style="font-family:Figtree,Helvetica,sans-serif;color:#131826;background:#fdfbf8">
+
+  <section style="position:relative;width:100%;height:700px;overflow:hidden;isolation:isolate;background:#131826">
+
+    <video ref="{{ videoRef }}" src="uploads/15601307_1920_1080_30fps.mp4" autoPlay="{{ true }}" muted="{{ true }}" playsInline="{{ true }}" preload="auto" style="{{ videoStyle }}"></video>
+    <video ref="{{ videoRefB }}" src="uploads/15601307_1920_1080_30fps.mp4" muted="{{ true }}" playsInline="{{ true }}" preload="auto" style="{{ videoStyleB }}"></video>
+
+    <div style="{{ baseTintStyle }}"></div>
+
+    <div style="{{ cycleA }}"></div>
+    <div style="{{ cycleB }}"></div>
+    <div style="{{ cycleC }}"></div>
+    <div style="{{ cycleD }}"></div>
+
+    <svg style="position:absolute;inset:-20%;width:140%;height:140%;mix-blend-mode:overlay;opacity:.75;filter:blur(1px);animation:xdAmbientDrift 26s ease-in-out infinite;pointer-events:none"><rect width="100%" height="100%" filter="url(#grainF)"></rect></svg>
+    <svg style="position:absolute;inset:0;width:100%;height:100%;mix-blend-mode:overlay;opacity:.55;animation:xdGrainDrift 9s ease-in-out infinite;pointer-events:none"><rect width="100%" height="100%" filter="url(#grainF)"></rect></svg>
+
+    <div style="{{ legibilityStyle }}"></div>
+
+    <sc-if value="{{ showCopy }}" hint-placeholder-val="{{ true }}">
+      <div style="position:relative;height:100%;display:flex;flex-direction:column;justify-content:center;gap:20px;padding:0 clamp(32px,7vw,110px);max-width:900px">
+        <div style="font:600 11px Figtree;letter-spacing:.14em;text-transform:uppercase;color:#5c6b7a">Xperiens Digital</div>
+        <h1 style="margin:0;font:700 clamp(38px,5vw,64px)/1.05 Figtree;letter-spacing:-0.02em;color:#131826;text-wrap:balance">AI that earns its place in the business</h1>
+        <p style="margin:0;max-width:520px;font:400 18px/1.6 Figtree;color:#2a3345;text-wrap:pretty">Diagnostic, governance, delivery and enablement — one partner across the whole arc.</p>
+        <div style="display:flex;gap:12px;margin-top:8px">
+          <a href="#" style="display:inline-flex;align-items:center;padding:14px 26px;border-radius:4px;background:#131826;color:#fdfbf8;font:600 14px Figtree;text-decoration:none">Book a diagnostic</a>
+          <a href="#" style="display:inline-flex;align-items:center;padding:14px 26px;border-radius:4px;border:1px solid rgba(19,24,38,.28);color:#131826;font:600 14px Figtree;text-decoration:none">See our work</a>
+        </div>
+      </div>
+    </sc-if>
+  </section>
+
+  <div style="padding:40px clamp(32px,7vw,110px) 72px;display:flex;flex-direction:column;gap:26px;max-width:900px">
+    <div style="font:600 11px Figtree;letter-spacing:.05em;color:#5c6b7a">HOW THE FILTER IS BUILT</div>
+    <p style="margin:0;font:400 15px/1.7 Figtree;color:#131826;text-wrap:pretty">The mp4 itself is untouched. Item 20's treatment is applied as CSS layers on top of it, so the same footage can carry any service gradient and you can retune it without re-exporting video.</p>
+    <ol style="margin:0;padding-left:20px;display:flex;flex-direction:column;gap:10px;font:400 15px/1.6 Figtree;color:#2a3345">
+      <li>Video is desaturated and lifted so it reads as texture, not content.</li>
+      <li>A flat brand base sits over it, then the four service gradients cross-fade on the 28s / 7s-per-service loop from item 20.</li>
+      <li>Gradient layers blend in <code style="font:500 13px ui-monospace,Menlo,monospace">color</code> or <code style="font:500 13px ui-monospace,Menlo,monospace">soft-light</code>, so the footage keeps its motion but takes the brand hue.</li>
+      <li>Both grain passes (26s slow, 9s fast) sit on top at <code style="font:500 13px ui-monospace,Menlo,monospace">overlay</code>, unifying video noise and gradient into one surface.</li>
+    </ol>
+    <p style="margin:0;font:400 14px/1.6 Figtree;color:#5c6b7a">Use the Tweaks panel to dial blend mode, tint strength and desaturation, then hand the resulting values to the build. For a baked-in mp4, this hero can be screen-recorded or run through ffmpeg with the same values.</p>
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{
+  &quot;blendMode&quot;: {&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;color&quot;,&quot;soft-light&quot;,&quot;overlay&quot;,&quot;hue&quot;,&quot;luminosity&quot;,&quot;multiply&quot;,&quot;screen&quot;],&quot;default&quot;:&quot;color&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Filter&quot;},
+  &quot;tintStrength&quot;: {&quot;editor&quot;:&quot;range&quot;,&quot;min&quot;:0,&quot;max&quot;:100,&quot;step&quot;:1,&quot;unit&quot;:&quot;%&quot;,&quot;default&quot;:88,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Filter&quot;},
+  &quot;desaturate&quot;: {&quot;editor&quot;:&quot;range&quot;,&quot;min&quot;:0,&quot;max&quot;:100,&quot;step&quot;:1,&quot;unit&quot;:&quot;%&quot;,&quot;default&quot;:78,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Filter&quot;},
+  &quot;videoBrightness&quot;: {&quot;editor&quot;:&quot;range&quot;,&quot;min&quot;:60,&quot;max&quot;:150,&quot;step&quot;:1,&quot;unit&quot;:&quot;%&quot;,&quot;default&quot;:108,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Filter&quot;},
+  &quot;trimEndSeconds&quot;: {&quot;editor&quot;:&quot;range&quot;,&quot;min&quot;:0,&quot;max&quot;:5,&quot;step&quot;:0.25,&quot;unit&quot;:&quot;s&quot;,&quot;default&quot;:1,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Loop&quot;},
+  &quot;crossfadeSeconds&quot;: {&quot;editor&quot;:&quot;range&quot;,&quot;min&quot;:0.25,&quot;max&quot;:4,&quot;step&quot;:0.25,&quot;unit&quot;:&quot;s&quot;,&quot;default&quot;:1.2,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Loop&quot;},
+  &quot;cycleSeconds&quot;: {&quot;editor&quot;:&quot;range&quot;,&quot;min&quot;:8,&quot;max&quot;:60,&quot;step&quot;:1,&quot;unit&quot;:&quot;s&quot;,&quot;default&quot;:28,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Motion&quot;},
+  &quot;copyScrim&quot;: {&quot;editor&quot;:&quot;range&quot;,&quot;min&quot;:0,&quot;max&quot;:80,&quot;step&quot;:1,&quot;unit&quot;:&quot;%&quot;,&quot;default&quot;:34,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Copy&quot;},
+  &quot;showCopy&quot;: {&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Copy&quot;}
+}">
+const G = {
+  enable:   'linear-gradient(180deg, #a8e0c8 0%, #cfe9d9 40%, #f7dcae 100%)',
+  discover: 'radial-gradient(160% 130% at 50% 100%, #f9e9c9 0%, #f2b8b6 38%, #a9b6e8 70%, #8095dd 100%)',
+  govern:   'linear-gradient(125deg, #c9b8ec 0%, #e3d3f0 40%, #d7ecdf 68%, #a8e0c8 100%)',
+  transform:'radial-gradient(125% 125% at 82% 12%, #fdf4e4 0%, #fbead0 14%, #f8dcb8 28%, #f3c896 44%, #ddcaee 66%, #c9b8ec 84%, #e3d3f0 100%)'
+};
+
+class Component extends DCLogic {
+  videoRef = React.createRef();
+  videoRefB = React.createRef();
+  componentDidMount() {
+    const a = this.videoRef.current, b = this.videoRefB.current;
+    if (!a || !b) return;
+    const trim = this.props.trimEndSeconds ?? 1;
+    const fade = this.props.crossfadeSeconds ?? 1.2;
+
+    const prep = (v) => {
+      v.muted = true;
+      v.setAttribute('muted', '');
+      v.setAttribute('playsinline', '');
+      v.style.transition = `opacity ${fade}s cubic-bezier(.4,0,.6,1)`;
+    };
+    prep(a); prep(b);
+    a.style.opacity = '1'; b.style.opacity = '0';
+
+    let active = a, idle = b, swapping = false;
+    const play = (v) => v.play().catch(() => {});
+    play(a);
+    a.addEventListener('canplay', () => play(a), { once: true });
+
+    const tick = () => {
+      const v = active;
+      if (!swapping && v.duration && v.currentTime >= v.duration - trim - fade) {
+        swapping = true;
+        idle.currentTime = 0;
+        play(idle);
+        idle.style.opacity = '1';
+        v.style.opacity = '0';
+        const done = idle;
+        setTimeout(() => {
+          v.pause(); v.currentTime = 0;
+          active = done; idle = v; swapping = false;
+        }, fade * 1000);
+      }
+      this._raf = requestAnimationFrame(tick);
+    };
+    this._raf = requestAnimationFrame(tick);
+  }
+  componentWillUnmount() { cancelAnimationFrame(this._raf); }
+  layer(bg, delay, dur, blend, op) {
+    return `position:absolute;inset:0;background:${bg};mix-blend-mode:${blend};opacity:0;` +
+      `animation:xdHeroCycle ${dur}s linear ${delay}s infinite both;` +
+      `--peak:${op};pointer-events:none;will-change:opacity`;
+  }
+  renderVals() {
+    const p = this.props;
+    const blend = p.blendMode ?? 'color';
+    const strength = p.tintStrength ?? 88;
+    const desat = p.desaturate ?? 78;
+    const dur = p.cycleSeconds ?? 28;
+    const bright = p.videoBrightness ?? 108;
+    const q = dur / 4;
+
+    const mk = (bg, i) => this.layer(bg, (i * q).toFixed(2), dur, blend, strength / 100) + `;filter:opacity(${strength}%)`;
+
+    return {
+      videoRef: this.videoRef,
+      videoRefB: this.videoRefB,
+      videoStyleB: `position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;` +
+        `filter:saturate(${100 - desat}%) brightness(${bright}%) contrast(104%);`,
+      showCopy: p.showCopy ?? true,
+      videoStyle: `position:absolute;inset:0;width:100%;height:100%;object-fit:cover;` +
+        `filter:saturate(${100 - desat}%) brightness(${bright}%) contrast(104%);`,
+      baseTintStyle: `position:absolute;inset:0;background:${G.enable};mix-blend-mode:${blend};` +
+        `opacity:${(strength / 100) * 0.55};pointer-events:none`,
+      cycleA: mk(G.enable, 0),
+      cycleB: mk(G.discover, 1),
+      cycleC: mk(G.govern, 2),
+      cycleD: mk(G.transform, 3),
+      legibilityStyle: `position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg, rgba(253,251,248,${(p.copyScrim ?? 34) / 100}) 0%, rgba(253,251,248,${(p.copyScrim ?? 34) / 200}) 46%, rgba(253,251,248,0) 74%)`
+    };
+  }
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+# Keep every file byte-for-byte as Claude Design stores it
+* -text
+*.ttf binary
+*.png binary
+*.mp4 binary
+*.webp binary

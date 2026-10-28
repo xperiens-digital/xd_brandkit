@@ -1,0 +1,15 @@
+:root{
+--ease-default:ease-in-out; /* @kind other */
+--duration-hover:.3s; /* @kind other */
+--duration-hover-fast:.25s; /* @kind other */
+--duration-sweep:2.6s; /* @kind other */
+--duration-sweep-loop:6s; /* @kind other — slower ambient sweep for standalone icon marks */
+--duration-loader-sweep:2.6s; /* @kind other */
+--duration-icon-eye:2.4s; /* @kind other */
+--duration-icon-flag:1.4s; /* @kind other */
+--duration-icon-toggle:1.6s; /* @kind other */
+--duration-grain-drift:9s; /* @kind other */
+--duration-grain-ambient:26s; /* @kind other */
+--duration-blob-morph:22s; /* @kind other */
+}
+@keyframes xd-grain-drift{0%{transform:scale(1) translate(0,0)}50%{transform:scale(1.08) translate(-1.5%,1%)}100%{transform:scale(1) translate(0,0)}}

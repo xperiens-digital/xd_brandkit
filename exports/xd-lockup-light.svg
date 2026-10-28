@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="248" height="40" viewBox="0 0 248 40" fill="none">
+  <g fill="#131826" fill-rule="evenodd" transform="translate(0 8) scale(0.0566)">
+    <path d="M 381 6 L 418 6 L 418 155 L 306 155 L 306 43 L 381 43 Z M 6 43 L 43 43 L 43 80 L 6 80 Z M 81 43 L 118 43 L 118 80 L 81 80 Z M 345 80 L 344 80 L 344 81 L 343 81 L 343 118 L 381 118 L 381 80 Z M 44 81 L 81 81 L 81 118 L 44 118 Z M 81 118 L 118 118 L 118 155 L 81 155 Z M 6 118 L 43 118 L 43 155 L 6 155 Z M 194 118 L 231 118 L 231 155 L 194 155 Z"></path>
+  </g>
+  <line x1="76" y1="6" x2="76" y2="34" stroke="#1c1a17" stroke-opacity="0.15" stroke-width="1"></line>
+  <text x="90" y="24" font-family="Figtree, &#39;Helvetica Neue&#39;, Arial, sans-serif" font-size="12" font-weight="600" letter-spacing="0.36" fill="#131826">XPERIENS DIGITAL</text>
+</svg>

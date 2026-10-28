@@ -1,0 +1,55 @@
+:root{
+/* base */
+--xd-ink:#131826;
+--xd-ink-night:oklch(18% 0.03 255);
+--xd-tan:oklch(96.5% 0.014 78);
+--xd-panel:#f5f1ea;
+--xd-grey:#5c6b7a;
+--xd-grey-faint:#8a92a0;
+--xd-hairline:rgba(19,24,38,.12);
+--xd-hairline-strong:rgba(19,24,38,.2);
+
+/* semantic aliases */
+--surface-page:var(--xd-tan);
+--surface-panel:var(--xd-panel);
+--surface-night:var(--xd-ink);
+--text-heading:var(--xd-ink);
+--text-body:var(--xd-ink);
+--text-subheading:var(--xd-grey);
+--text-on-night:var(--xd-tan);
+--text-on-night-dim:rgba(245,241,234,.65);
+--border-default:var(--xd-hairline);
+--border-strong:var(--xd-hairline-strong);
+--link-color:#6f85d6;
+--link-hover:#c9b8ec;
+
+/* Discover */
+--discover-1:#f9e9c9;
+--discover-2:#f2b8b6;
+--discover-3:#a9b6e8;
+--discover-4:#8095dd;
+--discover-gradient:radial-gradient(120% 90% at 50% 100%, var(--discover-1) 0%, var(--discover-2) 32%, var(--discover-3) 68%, var(--discover-4) 100%);
+
+/* Govern */
+--govern-1:#c9b8ec;
+--govern-2:#e3d3f0;
+--govern-3:#d7ecdf;
+--govern-4:#a8e0c8;
+--govern-gradient:linear-gradient(125deg, var(--govern-1) 0%, var(--govern-2) 35%, var(--govern-3) 65%, var(--govern-4) 100%);
+
+/* Transform */
+--transform-1:#fbead0;
+--transform-2:#f3c896;
+--transform-3:#8fa0e0;
+--transform-4:#6f85d6;
+--transform-gradient:radial-gradient(60% 60% at 82% 12%, var(--transform-1) 0%, var(--transform-2) 30%, var(--transform-3) 62%, var(--transform-4) 100%);
+
+/* Enable */
+--enable-1:#a8e0c8;
+--enable-2:#cfe9d9;
+--enable-3:#f7dcae;
+--enable-gradient:linear-gradient(180deg, var(--enable-1) 0%, var(--enable-2) 40%, var(--enable-3) 100%);
+
+/* conic sweep — shared accent across service hues, used for hover/loading motion */
+--sweep-gradient:conic-gradient(from 200deg, var(--transform-3), var(--govern-1), var(--discover-2), var(--transform-1), var(--enable-1), var(--transform-3));
+}
