@@ -2,7 +2,7 @@
 
 The second-generation design system for Xperiens Digital (X.D). V2 keeps what people already know us by, the pixel x.d mark, the V1 pastel families and the conic sweep that turns on hover, and fixes what made V1 feel one-dimensional: the warm tan ground that read too close to Claude's taupe, the single Figtree voice, loosely spaced logo lockups, and a component set that stopped at the marketing site.
 
-**Status: proposed, revision 2, 5 Nov 2026.** Not yet approved by Ben Dexter. Until it is, V1 (`x.d brand kit/` in the website and xperiens-os repos) remains the production system, and nothing here ships to xperiens.digital.
+**Status: approved for the website, 5 Nov 2026 (Ben Dexter).** Published as `@xperiens-digital/brand-kit` v2.0.0 from the public repo github.com/xperiens-digital/xd_brandkit; projects load it from there rather than keeping copies. V1 stays live on xperiens.digital until the website switch-over.
 
 ## What changed from V1
 
@@ -118,4 +118,4 @@ Each component page carries its guidelines and a live preview in both themes.
 ## Open decisions for Ben
 
 1. Whether V2 replaces the document house style (Branded Documents Skill v2) or stays web-first for now.
-2. Approve before the website migration: tokens move into `xperiens-brand-tokens`, then `x.d brand kit/_ds` is re-exported (the `update-tokens` workflow).
+2. Website switch-over: the site loads the brand kit package by version and drops its vendored `x.d brand kit/` folder and copied tokens; `xperiens-brand-tokens` is retired.
