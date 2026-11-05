@@ -2,7 +2,13 @@
 
 The Xperiens Digital brand kit and design system, mirrored from the Claude Design project **"x.d brand kit"** (https://claude.ai/design/p/ecb7b4a3-89dc-427d-8053-63ca0e689606).
 
-Claude Design is the source of truth; this repo is kept in step by a weekly scheduled sync and is the place other projects and agents connect to for X.D brand assets.
+Claude Design is the source of truth for V1. This repo is the place other projects and agents connect to for X.D brand assets.
+
+## Brand V2
+
+`v2/` holds a one-way backup of the **X.D Brand V2** design system artifact (https://claude.ai/artifact/RiVU2vDkEo4LJR9UUGnpNF): brand book (`README.md`), imagery guide, `tokens.json`, 31 components with previews and `components/bundle.{css,js}`, fonts (Momo Trust Display, Onest, Spline Sans Mono, Tiny5), logos, icons and ambient imagery. The artifact is the source of truth; edit there, then back up here.
+
+## Brand V1
 
 ## Where to look
 
@@ -18,4 +24,4 @@ Claude Design is the source of truth; this repo is kept in step by a weekly sche
 
 `.dc.html` files are Claude Design canvases. Open them in Claude Design for the full, interactive view.
 
-How the sync works, and what it can and can't carry automatically, is in `CLAUDE.md`.
+How V2 backups and V1 refreshes work is in `CLAUDE.md`.

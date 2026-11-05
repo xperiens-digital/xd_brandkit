@@ -1,0 +1,7 @@
+<!-- @dsCard group="Website" height=120 subtitle="Lead-capture dialog" -->
+<div class="xd" style="padding:24px;background:var(--ground);min-height:100%"><button class="xd-btn" onclick="document.getElementById('m').showModal()">Open the modal</button>
+<dialog class="xd-modal" id="m"><form method="dialog" style="display:grid;gap:16px">
+ <div style="display:flex;justify-content:space-between;align-items:start"><h2 class="xd-h2">See it working</h2><button class="xd-btn xd-btn--ghost" aria-label="Close"><xd-icon name="close" mono></xd-icon></button></div>
+ <p class="xd-body">Tell us which part of the business to look at first.</p>
+ <label class="xd-field"><span class="xd-label">Work email</span><input class="xd-input"></label>
+ <button class="xd-btn xd-btn--spectrum" value="ok" onclick="XD.toast('Thanks. Check your inbox for the engagement guide.')">Send</button></form></dialog></div>

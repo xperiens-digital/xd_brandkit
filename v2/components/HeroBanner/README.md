@@ -1,0 +1,3 @@
+# HeroBanner
+
+General-purpose hero on ONE background motif. The preview uses dot matrix: a single dot screen on the plain ground, with nothing layered under it. Never stack a second motif (a mesh, a dither, a pixel field) under or over the hero texture; one motif per hero keeps the headline the focus. Textures are in the Imagery asset group (`hero-<name>.webp`); colour mass sits on the right, so the copy block (`.xd-texture-hero__copy`, max 520px) sits on the calm left. Use one texture per page; vary it between pages. For the homepage, the animated sweep Hero remains the lead option; texture heroes suit section and landing pages.

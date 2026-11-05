@@ -22,7 +22,22 @@ Repo-only files (never in the project): `CLAUDE.md`, `README.md`, `.gitattribute
 
 `.dc.html` pages open in Claude Design; outside it they render only partly (they rely on Claude Design's runtime).
 
-## Weekly sync (procedure)
+## V2 backup (one-way, prompted)
+
+**X.D Brand V2** is a Design System artifact: https://claude.ai/artifact/RiVU2vDkEo4LJR9UUGnpNF. The artifact is the source of truth, where Ben edits and comments on the page. `v2/` is a one-way backup of it for other projects to reference. Never edit `v2/` by hand and never sync from git back to the artifact.
+
+There is no scheduled task. When a session has edited the V2 artifact, Claude prompts Ben part-way through a long session and towards the end to back up. To back up:
+
+1. Pull the latest `main` and branch (e.g. `brand-v2-backup-YYYY-MM-DD`).
+2. Replace `v2/` with the artifact's current `project/` files (from the session's local source, or read with the Artifact tools). Keep `v2/BACKUP.md` and update its snapshot date.
+3. Check a few files against the live artifact by SHA-256 (index `design-system.json`, `tokens.json`, `components/bundle.*`).
+4. Commit (see Git), push the branch, open a PR. Merge to `main` only with Ben's approval.
+
+## V1 sync (retired)
+
+The weekly scheduled sync was retired on 5 Nov 2026. The procedure below is kept for a manual V1 refresh if Ben asks for one.
+
+### Procedure
 
 Run by the scheduled task "X.D brand kit weekly sync". Each run:
 
@@ -46,4 +61,4 @@ Claude Design is moving into Artifacts in the Claude app; the current version is
 
 ## Git
 
-Commit as Ben Dexter <ben.dexter@xperiens.com.au>. `main` is the only branch. The weekly task has Ben's standing approval to commit and push brand kit changes to `main`; nothing else is pushed without his approval.
+Commit as Ben Dexter <ben.dexter@xperiens.com.au>. `main` is the default branch; V2 backups arrive by PR. Nothing is pushed to `main` or merged without Ben's approval. (The retired weekly task's standing approval no longer applies.)
