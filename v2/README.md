@@ -83,6 +83,10 @@ The mark and lockups are inline vector SVG drawn from the canonical pixel path, 
 
 The V1 document lockup (Brand Board 3a) stays in use for PDFs until a V2 document style is approved.
 
+### Partner marks
+
+Microsoft Solutions Partner, Dicker Data and Cognitive View carry over unchanged from V1 (the **Partners** asset group). They are single colour only, grey on light grounds and light grey on navy, at 44px optical height (stacked lockups 88px) with at least 48px clear space. They never take a brand hue, the sweep or animation. See the Partner marks component.
+
 ## Imagery
 
 Generated ambient textures replace stock photography; the Imagery section has the rules. In short: grain mesh is locked for the five service pages, six dot and dither combinations cover hero banners, and the same six in three colourways cover Insights headers and cards. Colour sits right, copy sits on the calm left.
@@ -97,7 +101,7 @@ Rules: icons label things, they do not decorate them. One icon size per row (20p
 
 Framework-free custom elements and CSS classes, so they drop into the Next.js site, a plain HTML survey, HubSpot pages or an X.D OS dashboard. Load `tokens.css`, `components/bundle.css`, then `components/bundle.js` (it defines the elements and `window.XD`).
 
-- **Brand:** Logo (`<xd-mark>`), Logo construction, Page loader (`<xd-page-loader>`), Icon (`<xd-icon>`), Divider and inline loader.
+- **Brand:** Logo (`<xd-mark>`), Logo construction, Page loader (`<xd-page-loader>`), Partner marks, Icon (`<xd-icon>`), Divider and inline loader.
 - **Website:** Button, Chip and status, Service card (grain mesh art), Numbered tile, Nav, Hero, Hero banner (texture), Insights article header, Form fields, FAQ, CTA banner, Modal, Toast (`XD.toast()`), Footer, Insight card.
 - **Survey:** progress (`<xd-progress>`), choice tiles (`<xd-choices>`), NPS / Likert / rating (`<xd-scale>`), maturity staircase (`<xd-maturity>`), slider (`<xd-slider>`). Every input fires `change` with `detail.value`; `XD.burst(el)` celebrates a finished survey.
 - **Dashboard:** KPI tile with sparkline (`<xd-kpi>`), progress ring (`<xd-ring>`), OKR card (`<xd-okr>`), grouped bars (`<xd-bars>`), readiness radar (`<xd-radar>`), data table (`.xd-table`).

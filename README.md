@@ -11,9 +11,10 @@ A one-way backup of the **X.D Brand V2** design system artifact (https://claude.
 | Brand book (voice, logo, colour, type, components) | `v2/README.md` |
 | Imagery and ambient textures guide | `v2/Imagery.md` |
 | Design tokens | `v2/tokens.json` |
-| Components (31, with previews) | `v2/components/`, bundled in `components/bundle.{css,js}` |
+| Components (32, with previews) | `v2/components/`, bundled in `components/bundle.{css,js}` |
 | Fonts (Momo Trust Display, Onest, Spline Sans Mono, Tiny5) | `v2/fonts/` |
 | Logos, icons, imagery | `v2/assets/Logos/`, `v2/assets/Icons/`, `v2/assets/Imagery/` |
+| Partner marks (Microsoft Solutions Partner, Dicker Data, Cognitive View) | `v2/assets/Partners/` |
 | Index of the whole system | `v2/design-system.json` |
 
 ## Brand V1 (deprecated) — `v1-deprecated/`

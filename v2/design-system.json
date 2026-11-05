@@ -1,621 +1,658 @@
 {
- "v": 3,
- "layout": "files",
- "createdOnFiles": {
-  "v": 1,
-  "at": "2026-11-04T21:18:39Z"
- },
- "title": "X.D Brand V2",
- "namespace": "XD",
- "libraries": [],
- "sections": {},
- "groups": [
-  "Logos",
-  "Imagery",
-  "Icons"
- ],
- "assetGroups": {
-  "Logos": {
-   "name": "Logos",
-   "tile": "l",
-   "order": [
-    "xd-mark-conic.svg",
-    "xd-mark-navy.svg",
-    "xd-mark-white.svg",
-    "xd-app-box.svg",
-    "xd-lockup-stack-conic.svg",
-    "xd-lockup-stack-navy.svg",
-    "xd-lockup-stack-reverse.svg",
-    "xd-lockup-stack-white.svg",
-    "xd-lockup-row-conic.svg",
-    "xd-lockup-row-navy.svg",
-    "xd-lockup-row-reverse.svg",
-    "xd-lockup-row-white.svg",
-    "xd-bw-mark-black.svg",
-    "xd-bw-lockup-stack-black.svg",
-    "xd-bw-lockup-row-white-on-black.svg"
-   ],
-   "files": {
-    "xd-mark-conic.svg": {
-     "name": "xd-mark-conic.svg",
-     "blob": "dcdf0dc6be688a7d20e71bc89551cb7d",
-     "size": 11046,
-     "type": "image/svg+xml"
-    },
-    "xd-mark-navy.svg": {
-     "name": "xd-mark-navy.svg",
-     "blob": "43f2e9ea0d9999ab77738f012e0f9978",
-     "size": 528,
-     "type": "image/svg+xml"
-    },
-    "xd-mark-white.svg": {
-     "name": "xd-mark-white.svg",
-     "blob": "1ac7c7df987b3bdc5a2b79fa643074bc",
-     "size": 579,
-     "type": "image/svg+xml"
-    },
-    "xd-app-box.svg": {
-     "name": "xd-app-box.svg",
-     "blob": "06a1abab47b9532ab9cedee1acb9c309",
-     "size": 11121,
-     "type": "image/svg+xml"
-    },
-    "xd-lockup-stack-conic.svg": {
-     "name": "xd-lockup-stack-conic.svg",
-     "blob": "88173000549119357477cbe59ba4a9c9",
-     "size": 19332,
-     "type": "image/svg+xml"
-    },
-    "xd-lockup-stack-navy.svg": {
-     "name": "xd-lockup-stack-navy.svg",
-     "blob": "65ff0a05238e55624d0ef37ee4ee67f1",
-     "size": 8814,
-     "type": "image/svg+xml"
-    },
-    "xd-lockup-stack-reverse.svg": {
-     "name": "xd-lockup-stack-reverse.svg",
-     "blob": "2e58e5e2488f7caf8f4a89d6890d33dc",
-     "size": 19383,
-     "type": "image/svg+xml"
-    },
-    "xd-lockup-stack-white.svg": {
-     "name": "xd-lockup-stack-white.svg",
-     "blob": "ca55525aebe9efb24a4753e5fbdd78cb",
-     "size": 8865,
-     "type": "image/svg+xml"
-    },
-    "xd-lockup-row-conic.svg": {
-     "name": "xd-lockup-row-conic.svg",
-     "blob": "c97e515084bf6632c055111257471ebe",
-     "size": 19335,
-     "type": "image/svg+xml"
-    },
-    "xd-lockup-row-navy.svg": {
-     "name": "xd-lockup-row-navy.svg",
-     "blob": "7bd242737278bbc4ead3c3eefe649b63",
-     "size": 8817,
-     "type": "image/svg+xml"
-    },
-    "xd-lockup-row-reverse.svg": {
-     "name": "xd-lockup-row-reverse.svg",
-     "blob": "e9ee7bcaf79f5558f0f5fa1324da9e27",
-     "size": 19387,
-     "type": "image/svg+xml"
-    },
-    "xd-lockup-row-white.svg": {
-     "name": "xd-lockup-row-white.svg",
-     "blob": "3d478e9db681115b56b75f5e02e19025",
-     "size": 8869,
-     "type": "image/svg+xml"
-    },
-    "xd-bw-mark-black.svg": {
-     "name": "xd-bw-mark-black.svg",
-     "blob": "d3567c97800d824811f39e6d9a4b10af",
-     "size": 579,
-     "type": "image/svg+xml"
-    },
-    "xd-bw-lockup-stack-black.svg": {
-     "name": "xd-bw-lockup-stack-black.svg",
-     "blob": "56378936c7d2cd32fa9d0ccb329fe7fa",
-     "size": 8865,
-     "type": "image/svg+xml"
-    },
-    "xd-bw-lockup-row-white-on-black.svg": {
-     "name": "xd-bw-lockup-row-white-on-black.svg",
-     "blob": "483aa0a5c067b5a657d51396f2fe13c1",
-     "size": 8869,
-     "type": "image/svg+xml"
-    }
-   }
+  "v": 3,
+  "layout": "files",
+  "createdOnFiles": {
+    "v": 1,
+    "at": "2026-11-04T21:18:39Z"
   },
-  "Icons": {
-   "name": "Icons",
-   "tile": "xs",
-   "order": [
-    "alert.svg",
-    "arrow-right.svg",
-    "arrow-up-right.svg",
-    "bolt.svg",
-    "calendar.svg",
-    "chat.svg",
-    "check.svg",
-    "clock.svg",
-    "close.svg",
-    "cloud.svg",
-    "compass.svg",
-    "dashboard.svg",
-    "data.svg",
-    "document.svg",
-    "download.svg",
-    "govern.svg",
-    "growth.svg",
-    "info.svg",
-    "innovate.svg",
-    "insight.svg",
-    "intelligence.svg",
-    "layers.svg",
-    "location.svg",
-    "lock.svg",
-    "mail.svg",
-    "menu.svg",
-    "people.svg",
-    "phone.svg",
-    "pixel.svg",
-    "plus.svg",
-    "process.svg",
-    "reengineer.svg",
-    "search.svg",
-    "star.svg",
-    "survey.svg",
-    "target.svg"
-   ],
-   "files": {
-    "alert.svg": {
-     "name": "alert.svg",
-     "blob": "73c54ce3da1448d80735a948a3a4b291",
-     "size": 380,
-     "type": "image/svg+xml"
+  "title": "X.D Brand V2",
+  "namespace": "XD",
+  "libraries": [],
+  "sections": {},
+  "groups": [
+    "Logos",
+    "Partners",
+    "Imagery",
+    "Icons"
+  ],
+  "assetGroups": {
+    "Logos": {
+      "name": "Logos",
+      "tile": "l",
+      "order": [
+        "xd-mark-conic.svg",
+        "xd-mark-navy.svg",
+        "xd-mark-white.svg",
+        "xd-app-box.svg",
+        "xd-lockup-stack-conic.svg",
+        "xd-lockup-stack-navy.svg",
+        "xd-lockup-stack-reverse.svg",
+        "xd-lockup-stack-white.svg",
+        "xd-lockup-row-conic.svg",
+        "xd-lockup-row-navy.svg",
+        "xd-lockup-row-reverse.svg",
+        "xd-lockup-row-white.svg",
+        "xd-bw-mark-black.svg",
+        "xd-bw-lockup-stack-black.svg",
+        "xd-bw-lockup-row-white-on-black.svg"
+      ],
+      "files": {
+        "xd-mark-conic.svg": {
+          "name": "xd-mark-conic.svg",
+          "blob": "dcdf0dc6be688a7d20e71bc89551cb7d",
+          "size": 11046,
+          "type": "image/svg+xml"
+        },
+        "xd-mark-navy.svg": {
+          "name": "xd-mark-navy.svg",
+          "blob": "43f2e9ea0d9999ab77738f012e0f9978",
+          "size": 528,
+          "type": "image/svg+xml"
+        },
+        "xd-mark-white.svg": {
+          "name": "xd-mark-white.svg",
+          "blob": "1ac7c7df987b3bdc5a2b79fa643074bc",
+          "size": 579,
+          "type": "image/svg+xml"
+        },
+        "xd-app-box.svg": {
+          "name": "xd-app-box.svg",
+          "blob": "06a1abab47b9532ab9cedee1acb9c309",
+          "size": 11121,
+          "type": "image/svg+xml"
+        },
+        "xd-lockup-stack-conic.svg": {
+          "name": "xd-lockup-stack-conic.svg",
+          "blob": "88173000549119357477cbe59ba4a9c9",
+          "size": 19332,
+          "type": "image/svg+xml"
+        },
+        "xd-lockup-stack-navy.svg": {
+          "name": "xd-lockup-stack-navy.svg",
+          "blob": "65ff0a05238e55624d0ef37ee4ee67f1",
+          "size": 8814,
+          "type": "image/svg+xml"
+        },
+        "xd-lockup-stack-reverse.svg": {
+          "name": "xd-lockup-stack-reverse.svg",
+          "blob": "2e58e5e2488f7caf8f4a89d6890d33dc",
+          "size": 19383,
+          "type": "image/svg+xml"
+        },
+        "xd-lockup-stack-white.svg": {
+          "name": "xd-lockup-stack-white.svg",
+          "blob": "ca55525aebe9efb24a4753e5fbdd78cb",
+          "size": 8865,
+          "type": "image/svg+xml"
+        },
+        "xd-lockup-row-conic.svg": {
+          "name": "xd-lockup-row-conic.svg",
+          "blob": "c97e515084bf6632c055111257471ebe",
+          "size": 19335,
+          "type": "image/svg+xml"
+        },
+        "xd-lockup-row-navy.svg": {
+          "name": "xd-lockup-row-navy.svg",
+          "blob": "7bd242737278bbc4ead3c3eefe649b63",
+          "size": 8817,
+          "type": "image/svg+xml"
+        },
+        "xd-lockup-row-reverse.svg": {
+          "name": "xd-lockup-row-reverse.svg",
+          "blob": "e9ee7bcaf79f5558f0f5fa1324da9e27",
+          "size": 19387,
+          "type": "image/svg+xml"
+        },
+        "xd-lockup-row-white.svg": {
+          "name": "xd-lockup-row-white.svg",
+          "blob": "3d478e9db681115b56b75f5e02e19025",
+          "size": 8869,
+          "type": "image/svg+xml"
+        },
+        "xd-bw-mark-black.svg": {
+          "name": "xd-bw-mark-black.svg",
+          "blob": "d3567c97800d824811f39e6d9a4b10af",
+          "size": 579,
+          "type": "image/svg+xml"
+        },
+        "xd-bw-lockup-stack-black.svg": {
+          "name": "xd-bw-lockup-stack-black.svg",
+          "blob": "56378936c7d2cd32fa9d0ccb329fe7fa",
+          "size": 8865,
+          "type": "image/svg+xml"
+        },
+        "xd-bw-lockup-row-white-on-black.svg": {
+          "name": "xd-bw-lockup-row-white-on-black.svg",
+          "blob": "483aa0a5c067b5a657d51396f2fe13c1",
+          "size": 8869,
+          "type": "image/svg+xml"
+        }
+      }
     },
-    "arrow-right.svg": {
-     "name": "arrow-right.svg",
-     "blob": "fe81093a3d6fbd6c66b8dbccbf066b43",
-     "size": 238,
-     "type": "image/svg+xml"
+    "Icons": {
+      "name": "Icons",
+      "tile": "xs",
+      "order": [
+        "alert.svg",
+        "arrow-right.svg",
+        "arrow-up-right.svg",
+        "bolt.svg",
+        "calendar.svg",
+        "chat.svg",
+        "check.svg",
+        "clock.svg",
+        "close.svg",
+        "cloud.svg",
+        "compass.svg",
+        "dashboard.svg",
+        "data.svg",
+        "document.svg",
+        "download.svg",
+        "govern.svg",
+        "growth.svg",
+        "info.svg",
+        "innovate.svg",
+        "insight.svg",
+        "intelligence.svg",
+        "layers.svg",
+        "location.svg",
+        "lock.svg",
+        "mail.svg",
+        "menu.svg",
+        "people.svg",
+        "phone.svg",
+        "pixel.svg",
+        "plus.svg",
+        "process.svg",
+        "reengineer.svg",
+        "search.svg",
+        "star.svg",
+        "survey.svg",
+        "target.svg"
+      ],
+      "files": {
+        "alert.svg": {
+          "name": "alert.svg",
+          "blob": "73c54ce3da1448d80735a948a3a4b291",
+          "size": 380,
+          "type": "image/svg+xml"
+        },
+        "arrow-right.svg": {
+          "name": "arrow-right.svg",
+          "blob": "fe81093a3d6fbd6c66b8dbccbf066b43",
+          "size": 238,
+          "type": "image/svg+xml"
+        },
+        "arrow-up-right.svg": {
+          "name": "arrow-up-right.svg",
+          "blob": "b54de0ad77b131433ec66d15c1570ffe",
+          "size": 243,
+          "type": "image/svg+xml"
+        },
+        "bolt.svg": {
+          "name": "bolt.svg",
+          "blob": "83eb419255ac87b3e1a0530990d85ef8",
+          "size": 327,
+          "type": "image/svg+xml"
+        },
+        "calendar.svg": {
+          "name": "calendar.svg",
+          "blob": "7137238981d071edb01e934a9415ce80",
+          "size": 425,
+          "type": "image/svg+xml"
+        },
+        "chat.svg": {
+          "name": "chat.svg",
+          "blob": "454e885a31acff3b16b3a4acf1e862f0",
+          "size": 329,
+          "type": "image/svg+xml"
+        },
+        "check.svg": {
+          "name": "check.svg",
+          "blob": "efd1646dd7b544511eab4bc7cbcd138d",
+          "size": 324,
+          "type": "image/svg+xml"
+        },
+        "clock.svg": {
+          "name": "clock.svg",
+          "blob": "e251de4102624026206ea249693f0133",
+          "size": 321,
+          "type": "image/svg+xml"
+        },
+        "close.svg": {
+          "name": "close.svg",
+          "blob": "05f68abbfc40a08fb105ed74ee85e2df",
+          "size": 221,
+          "type": "image/svg+xml"
+        },
+        "cloud.svg": {
+          "name": "cloud.svg",
+          "blob": "52d11a898e60a5647066fb16d24c8890",
+          "size": 419,
+          "type": "image/svg+xml"
+        },
+        "compass.svg": {
+          "name": "compass.svg",
+          "blob": "b05aa879de892952fc2cb7e83663e250",
+          "size": 338,
+          "type": "image/svg+xml"
+        },
+        "dashboard.svg": {
+          "name": "dashboard.svg",
+          "blob": "a80486276069b7cde2b59a53d6060f77",
+          "size": 466,
+          "type": "image/svg+xml"
+        },
+        "data.svg": {
+          "name": "data.svg",
+          "blob": "c53459c7747b05a2c68407ea98ba252a",
+          "size": 401,
+          "type": "image/svg+xml"
+        },
+        "document.svg": {
+          "name": "document.svg",
+          "blob": "618fb7574d697e52e4cecafee3657371",
+          "size": 384,
+          "type": "image/svg+xml"
+        },
+        "download.svg": {
+          "name": "download.svg",
+          "blob": "2fc9f3bb77db260f60c183af88db1a4a",
+          "size": 384,
+          "type": "image/svg+xml"
+        },
+        "govern.svg": {
+          "name": "govern.svg",
+          "blob": "2f03d0592aaaaf6be7684628438eca67",
+          "size": 412,
+          "type": "image/svg+xml"
+        },
+        "growth.svg": {
+          "name": "growth.svg",
+          "blob": "781d0cbac9b1ed0a8a2b25e6f28a56db",
+          "size": 341,
+          "type": "image/svg+xml"
+        },
+        "info.svg": {
+          "name": "info.svg",
+          "blob": "765e516c71efa7aeb97929d81be54195",
+          "size": 331,
+          "type": "image/svg+xml"
+        },
+        "innovate.svg": {
+          "name": "innovate.svg",
+          "blob": "33b946c3a2be347f8d8208d5eb5638b0",
+          "size": 399,
+          "type": "image/svg+xml"
+        },
+        "insight.svg": {
+          "name": "insight.svg",
+          "blob": "19bdad684d486a54977f3c7920fd9497",
+          "size": 443,
+          "type": "image/svg+xml"
+        },
+        "intelligence.svg": {
+          "name": "intelligence.svg",
+          "blob": "5c77a262874ac454598658363c7c9038",
+          "size": 499,
+          "type": "image/svg+xml"
+        },
+        "layers.svg": {
+          "name": "layers.svg",
+          "blob": "f93205ec9e25aaf92fd16e5d9ce2b15f",
+          "size": 377,
+          "type": "image/svg+xml"
+        },
+        "location.svg": {
+          "name": "location.svg",
+          "blob": "dc21f05b8bdf5a8cddfc9a7787367abc",
+          "size": 400,
+          "type": "image/svg+xml"
+        },
+        "lock.svg": {
+          "name": "lock.svg",
+          "blob": "531c24ac487f50930cf476d9bd52943f",
+          "size": 392,
+          "type": "image/svg+xml"
+        },
+        "mail.svg": {
+          "name": "mail.svg",
+          "blob": "8b5b0ff92dc5b2b2dd326cab3f32ec92",
+          "size": 361,
+          "type": "image/svg+xml"
+        },
+        "menu.svg": {
+          "name": "menu.svg",
+          "blob": "b0bf7c1235503b994240135187d10a00",
+          "size": 234,
+          "type": "image/svg+xml"
+        },
+        "people.svg": {
+          "name": "people.svg",
+          "blob": "44b777f4fdcc4ca56fa535c56d1f85ba",
+          "size": 410,
+          "type": "image/svg+xml"
+        },
+        "phone.svg": {
+          "name": "phone.svg",
+          "blob": "09c2871fe3ef8a15872d6703bda88783",
+          "size": 441,
+          "type": "image/svg+xml"
+        },
+        "pixel.svg": {
+          "name": "pixel.svg",
+          "blob": "f24785855b86ce221c78589719c95492",
+          "size": 424,
+          "type": "image/svg+xml"
+        },
+        "plus.svg": {
+          "name": "plus.svg",
+          "blob": "d3a57dab2dd8921e4af8ae9c1a66d0fa",
+          "size": 217,
+          "type": "image/svg+xml"
+        },
+        "process.svg": {
+          "name": "process.svg",
+          "blob": "7badc741a9f9fe0533f32d050b4686ec",
+          "size": 436,
+          "type": "image/svg+xml"
+        },
+        "reengineer.svg": {
+          "name": "reengineer.svg",
+          "blob": "d5609c1e19ed457f54a4a6de2e4161c7",
+          "size": 373,
+          "type": "image/svg+xml"
+        },
+        "search.svg": {
+          "name": "search.svg",
+          "blob": "79275b10fb10b7fb5161d5fba7b83193",
+          "size": 323,
+          "type": "image/svg+xml"
+        },
+        "star.svg": {
+          "name": "star.svg",
+          "blob": "8ed6a3f9e484d5b0d9df00154fe80ac1",
+          "size": 395,
+          "type": "image/svg+xml"
+        },
+        "survey.svg": {
+          "name": "survey.svg",
+          "blob": "b8c75ca4b4c1934f2544e2ea97d3a63b",
+          "size": 432,
+          "type": "image/svg+xml"
+        },
+        "target.svg": {
+          "name": "target.svg",
+          "blob": "c914d1db47aa2fa559d1545aee02a280",
+          "size": 395,
+          "type": "image/svg+xml"
+        }
+      }
     },
-    "arrow-up-right.svg": {
-     "name": "arrow-up-right.svg",
-     "blob": "b54de0ad77b131433ec66d15c1570ffe",
-     "size": 243,
-     "type": "image/svg+xml"
+    "Imagery": {
+      "name": "Imagery",
+      "tile": "l",
+      "order": [
+        "service-mesh-cloud.webp",
+        "service-mesh-govern.webp",
+        "service-mesh-hero.webp",
+        "service-mesh-innovate.webp",
+        "service-mesh-intel.webp",
+        "service-mesh-reengineer.webp",
+        "hero-dotbloom.webp",
+        "hero-dotdrift.webp",
+        "hero-dotmatrix.webp",
+        "hero-horizon.webp",
+        "hero-orbit.webp",
+        "hero-pixeldissolve.webp",
+        "insight-dotbloom-1.webp",
+        "insight-dotbloom-2.webp",
+        "insight-dotbloom-3.webp",
+        "insight-dotdrift-1.webp",
+        "insight-dotdrift-2.webp",
+        "insight-dotdrift-3.webp",
+        "insight-dotmatrix-1.webp",
+        "insight-dotmatrix-2.webp",
+        "insight-dotmatrix-3.webp",
+        "insight-horizon-1.webp",
+        "insight-horizon-2.webp",
+        "insight-horizon-3.webp",
+        "insight-orbit-1.webp",
+        "insight-orbit-2.webp",
+        "insight-orbit-3.webp",
+        "insight-pixeldissolve-1.webp",
+        "insight-pixeldissolve-2.webp",
+        "insight-pixeldissolve-3.webp"
+      ],
+      "files": {
+        "service-mesh-cloud.webp": {
+          "name": "service-mesh-cloud.webp",
+          "blob": "4730aa203a4e83b5aa9c75490b53bf6a",
+          "size": 102788,
+          "type": "image/webp"
+        },
+        "service-mesh-govern.webp": {
+          "name": "service-mesh-govern.webp",
+          "blob": "45ebd5bee5a537d1043cf17aeb3081e6",
+          "size": 102518,
+          "type": "image/webp"
+        },
+        "service-mesh-hero.webp": {
+          "name": "service-mesh-hero.webp",
+          "blob": "77eff25109a705fcbcb893a1ce375441",
+          "size": 402636,
+          "type": "image/webp"
+        },
+        "service-mesh-innovate.webp": {
+          "name": "service-mesh-innovate.webp",
+          "blob": "728d2e70ae3c813d26ddf27cc710cd9e",
+          "size": 102178,
+          "type": "image/webp"
+        },
+        "service-mesh-intel.webp": {
+          "name": "service-mesh-intel.webp",
+          "blob": "9af78e5e52110040c1a19926e1814b37",
+          "size": 101916,
+          "type": "image/webp"
+        },
+        "service-mesh-reengineer.webp": {
+          "name": "service-mesh-reengineer.webp",
+          "blob": "5f7f3c3e31b09bf0e88af37fb6e815a9",
+          "size": 100974,
+          "type": "image/webp"
+        },
+        "hero-dotbloom.webp": {
+          "name": "hero-dotbloom.webp",
+          "blob": "f8c90b33779e073ba5ddb77c15bd22b5",
+          "size": 356494,
+          "type": "image/webp"
+        },
+        "hero-dotdrift.webp": {
+          "name": "hero-dotdrift.webp",
+          "blob": "717bd2399a43c6742da3ab7a3ec16e77",
+          "size": 140844,
+          "type": "image/webp"
+        },
+        "hero-dotmatrix.webp": {
+          "name": "hero-dotmatrix.webp",
+          "blob": "36e5ffd92fd77fe8e3657c5bbf640a34",
+          "size": 219502,
+          "type": "image/webp"
+        },
+        "hero-horizon.webp": {
+          "name": "hero-horizon.webp",
+          "blob": "e08d301b0b88e33d2c2ddd1c09599d3b",
+          "size": 404330,
+          "type": "image/webp"
+        },
+        "hero-orbit.webp": {
+          "name": "hero-orbit.webp",
+          "blob": "f888de686bac5f3b0273d2822f90c7bb",
+          "size": 215870,
+          "type": "image/webp"
+        },
+        "hero-pixeldissolve.webp": {
+          "name": "hero-pixeldissolve.webp",
+          "blob": "b266353e47657b5b4a78ffb5129e70ce",
+          "size": 294980,
+          "type": "image/webp"
+        },
+        "insight-dotbloom-1.webp": {
+          "name": "insight-dotbloom-1.webp",
+          "blob": "9328b5b50beca8393c7542cada1d83a9",
+          "size": 235700,
+          "type": "image/webp"
+        },
+        "insight-dotbloom-2.webp": {
+          "name": "insight-dotbloom-2.webp",
+          "blob": "a580bfecea102ac1145ec20fb72a77ca",
+          "size": 230640,
+          "type": "image/webp"
+        },
+        "insight-dotbloom-3.webp": {
+          "name": "insight-dotbloom-3.webp",
+          "blob": "ac053a791b3dbdba9150f71bc00c25f0",
+          "size": 238856,
+          "type": "image/webp"
+        },
+        "insight-dotdrift-1.webp": {
+          "name": "insight-dotdrift-1.webp",
+          "blob": "c08b642294c67e327c9d00b0e275aec3",
+          "size": 113240,
+          "type": "image/webp"
+        },
+        "insight-dotdrift-2.webp": {
+          "name": "insight-dotdrift-2.webp",
+          "blob": "1cedcb4f3cea35a51f5fe791f26bb1c6",
+          "size": 112908,
+          "type": "image/webp"
+        },
+        "insight-dotdrift-3.webp": {
+          "name": "insight-dotdrift-3.webp",
+          "blob": "8e8fafb9d724395273011c42fa7c8671",
+          "size": 102964,
+          "type": "image/webp"
+        },
+        "insight-dotmatrix-1.webp": {
+          "name": "insight-dotmatrix-1.webp",
+          "blob": "a64cf5c0c81fe869a9cb4a47c28f1494",
+          "size": 129792,
+          "type": "image/webp"
+        },
+        "insight-dotmatrix-2.webp": {
+          "name": "insight-dotmatrix-2.webp",
+          "blob": "16b40fc7052eed11ad49ba4235ccd94a",
+          "size": 152078,
+          "type": "image/webp"
+        },
+        "insight-dotmatrix-3.webp": {
+          "name": "insight-dotmatrix-3.webp",
+          "blob": "ca382480a7ce6fd0b6449ea904619ae1",
+          "size": 134400,
+          "type": "image/webp"
+        },
+        "insight-horizon-1.webp": {
+          "name": "insight-horizon-1.webp",
+          "blob": "12c009e611d6df8b45e4ac4ed70084ae",
+          "size": 270302,
+          "type": "image/webp"
+        },
+        "insight-horizon-2.webp": {
+          "name": "insight-horizon-2.webp",
+          "blob": "a06c62aed08aac8707e1724cc6961430",
+          "size": 276934,
+          "type": "image/webp"
+        },
+        "insight-horizon-3.webp": {
+          "name": "insight-horizon-3.webp",
+          "blob": "81cbcffbd9be8e842007fd17120e283c",
+          "size": 263904,
+          "type": "image/webp"
+        },
+        "insight-orbit-1.webp": {
+          "name": "insight-orbit-1.webp",
+          "blob": "4b60bee294e9a39ac6f1524932028a41",
+          "size": 136066,
+          "type": "image/webp"
+        },
+        "insight-orbit-2.webp": {
+          "name": "insight-orbit-2.webp",
+          "blob": "db39613e335681c48ea850a447cf1dbf",
+          "size": 134874,
+          "type": "image/webp"
+        },
+        "insight-orbit-3.webp": {
+          "name": "insight-orbit-3.webp",
+          "blob": "294225716308d166d2390b0c7dfdfa60",
+          "size": 140634,
+          "type": "image/webp"
+        },
+        "insight-pixeldissolve-1.webp": {
+          "name": "insight-pixeldissolve-1.webp",
+          "blob": "512e471b078e3010c9de297cade7bd25",
+          "size": 192618,
+          "type": "image/webp"
+        },
+        "insight-pixeldissolve-2.webp": {
+          "name": "insight-pixeldissolve-2.webp",
+          "blob": "1e33eca0252fe27e9ea3499ff3b6f69d",
+          "size": 198530,
+          "type": "image/webp"
+        },
+        "insight-pixeldissolve-3.webp": {
+          "name": "insight-pixeldissolve-3.webp",
+          "blob": "fee02065c15e17910b1f712fb97a3aad",
+          "size": 193210,
+          "type": "image/webp"
+        }
+      }
     },
-    "bolt.svg": {
-     "name": "bolt.svg",
-     "blob": "83eb419255ac87b3e1a0530990d85ef8",
-     "size": 327,
-     "type": "image/svg+xml"
-    },
-    "calendar.svg": {
-     "name": "calendar.svg",
-     "blob": "7137238981d071edb01e934a9415ce80",
-     "size": 425,
-     "type": "image/svg+xml"
-    },
-    "chat.svg": {
-     "name": "chat.svg",
-     "blob": "454e885a31acff3b16b3a4acf1e862f0",
-     "size": 329,
-     "type": "image/svg+xml"
-    },
-    "check.svg": {
-     "name": "check.svg",
-     "blob": "efd1646dd7b544511eab4bc7cbcd138d",
-     "size": 324,
-     "type": "image/svg+xml"
-    },
-    "clock.svg": {
-     "name": "clock.svg",
-     "blob": "e251de4102624026206ea249693f0133",
-     "size": 321,
-     "type": "image/svg+xml"
-    },
-    "close.svg": {
-     "name": "close.svg",
-     "blob": "05f68abbfc40a08fb105ed74ee85e2df",
-     "size": 221,
-     "type": "image/svg+xml"
-    },
-    "cloud.svg": {
-     "name": "cloud.svg",
-     "blob": "52d11a898e60a5647066fb16d24c8890",
-     "size": 419,
-     "type": "image/svg+xml"
-    },
-    "compass.svg": {
-     "name": "compass.svg",
-     "blob": "b05aa879de892952fc2cb7e83663e250",
-     "size": 338,
-     "type": "image/svg+xml"
-    },
-    "dashboard.svg": {
-     "name": "dashboard.svg",
-     "blob": "a80486276069b7cde2b59a53d6060f77",
-     "size": 466,
-     "type": "image/svg+xml"
-    },
-    "data.svg": {
-     "name": "data.svg",
-     "blob": "c53459c7747b05a2c68407ea98ba252a",
-     "size": 401,
-     "type": "image/svg+xml"
-    },
-    "document.svg": {
-     "name": "document.svg",
-     "blob": "618fb7574d697e52e4cecafee3657371",
-     "size": 384,
-     "type": "image/svg+xml"
-    },
-    "download.svg": {
-     "name": "download.svg",
-     "blob": "2fc9f3bb77db260f60c183af88db1a4a",
-     "size": 384,
-     "type": "image/svg+xml"
-    },
-    "govern.svg": {
-     "name": "govern.svg",
-     "blob": "2f03d0592aaaaf6be7684628438eca67",
-     "size": 412,
-     "type": "image/svg+xml"
-    },
-    "growth.svg": {
-     "name": "growth.svg",
-     "blob": "781d0cbac9b1ed0a8a2b25e6f28a56db",
-     "size": 341,
-     "type": "image/svg+xml"
-    },
-    "info.svg": {
-     "name": "info.svg",
-     "blob": "765e516c71efa7aeb97929d81be54195",
-     "size": 331,
-     "type": "image/svg+xml"
-    },
-    "innovate.svg": {
-     "name": "innovate.svg",
-     "blob": "33b946c3a2be347f8d8208d5eb5638b0",
-     "size": 399,
-     "type": "image/svg+xml"
-    },
-    "insight.svg": {
-     "name": "insight.svg",
-     "blob": "19bdad684d486a54977f3c7920fd9497",
-     "size": 443,
-     "type": "image/svg+xml"
-    },
-    "intelligence.svg": {
-     "name": "intelligence.svg",
-     "blob": "5c77a262874ac454598658363c7c9038",
-     "size": 499,
-     "type": "image/svg+xml"
-    },
-    "layers.svg": {
-     "name": "layers.svg",
-     "blob": "f93205ec9e25aaf92fd16e5d9ce2b15f",
-     "size": 377,
-     "type": "image/svg+xml"
-    },
-    "location.svg": {
-     "name": "location.svg",
-     "blob": "dc21f05b8bdf5a8cddfc9a7787367abc",
-     "size": 400,
-     "type": "image/svg+xml"
-    },
-    "lock.svg": {
-     "name": "lock.svg",
-     "blob": "531c24ac487f50930cf476d9bd52943f",
-     "size": 392,
-     "type": "image/svg+xml"
-    },
-    "mail.svg": {
-     "name": "mail.svg",
-     "blob": "8b5b0ff92dc5b2b2dd326cab3f32ec92",
-     "size": 361,
-     "type": "image/svg+xml"
-    },
-    "menu.svg": {
-     "name": "menu.svg",
-     "blob": "b0bf7c1235503b994240135187d10a00",
-     "size": 234,
-     "type": "image/svg+xml"
-    },
-    "people.svg": {
-     "name": "people.svg",
-     "blob": "44b777f4fdcc4ca56fa535c56d1f85ba",
-     "size": 410,
-     "type": "image/svg+xml"
-    },
-    "phone.svg": {
-     "name": "phone.svg",
-     "blob": "09c2871fe3ef8a15872d6703bda88783",
-     "size": 441,
-     "type": "image/svg+xml"
-    },
-    "pixel.svg": {
-     "name": "pixel.svg",
-     "blob": "f24785855b86ce221c78589719c95492",
-     "size": 424,
-     "type": "image/svg+xml"
-    },
-    "plus.svg": {
-     "name": "plus.svg",
-     "blob": "d3a57dab2dd8921e4af8ae9c1a66d0fa",
-     "size": 217,
-     "type": "image/svg+xml"
-    },
-    "process.svg": {
-     "name": "process.svg",
-     "blob": "7badc741a9f9fe0533f32d050b4686ec",
-     "size": 436,
-     "type": "image/svg+xml"
-    },
-    "reengineer.svg": {
-     "name": "reengineer.svg",
-     "blob": "d5609c1e19ed457f54a4a6de2e4161c7",
-     "size": 373,
-     "type": "image/svg+xml"
-    },
-    "search.svg": {
-     "name": "search.svg",
-     "blob": "79275b10fb10b7fb5161d5fba7b83193",
-     "size": 323,
-     "type": "image/svg+xml"
-    },
-    "star.svg": {
-     "name": "star.svg",
-     "blob": "8ed6a3f9e484d5b0d9df00154fe80ac1",
-     "size": 395,
-     "type": "image/svg+xml"
-    },
-    "survey.svg": {
-     "name": "survey.svg",
-     "blob": "b8c75ca4b4c1934f2544e2ea97d3a63b",
-     "size": 432,
-     "type": "image/svg+xml"
-    },
-    "target.svg": {
-     "name": "target.svg",
-     "blob": "c914d1db47aa2fa559d1545aee02a280",
-     "size": 395,
-     "type": "image/svg+xml"
+    "Partners": {
+      "name": "Partners",
+      "tile": "l",
+      "order": [
+        "microsoft-solutions-partner.svg",
+        "dicker-data.svg",
+        "cognitive-view-horizontal.svg",
+        "cognitive-view-stacked.svg"
+      ],
+      "files": {
+        "microsoft-solutions-partner.svg": {
+          "name": "microsoft-solutions-partner.svg",
+          "blob": "6f96b554a78c43621365a01f2d44717d",
+          "size": 3292,
+          "type": "image/svg+xml"
+        },
+        "dicker-data.svg": {
+          "name": "dicker-data.svg",
+          "blob": "1c0cafe7edd1bca5fa1e5a18d36d04af",
+          "size": 3065,
+          "type": "image/svg+xml"
+        },
+        "cognitive-view-horizontal.svg": {
+          "name": "cognitive-view-horizontal.svg",
+          "blob": "e325802cb277ef8d2835f353e65f7532",
+          "size": 23201,
+          "type": "image/svg+xml"
+        },
+        "cognitive-view-stacked.svg": {
+          "name": "cognitive-view-stacked.svg",
+          "blob": "83beef1852ad3c7e8ed00fd4dbda035a",
+          "size": 23412,
+          "type": "image/svg+xml"
+        }
+      }
     }
-   }
   },
-  "Imagery": {
-   "name": "Imagery",
-   "tile": "l",
-   "order": [
-    "service-mesh-cloud.webp",
-    "service-mesh-govern.webp",
-    "service-mesh-hero.webp",
-    "service-mesh-innovate.webp",
-    "service-mesh-intel.webp",
-    "service-mesh-reengineer.webp",
-    "hero-dotbloom.webp",
-    "hero-dotdrift.webp",
-    "hero-dotmatrix.webp",
-    "hero-horizon.webp",
-    "hero-orbit.webp",
-    "hero-pixeldissolve.webp",
-    "insight-dotbloom-1.webp",
-    "insight-dotbloom-2.webp",
-    "insight-dotbloom-3.webp",
-    "insight-dotdrift-1.webp",
-    "insight-dotdrift-2.webp",
-    "insight-dotdrift-3.webp",
-    "insight-dotmatrix-1.webp",
-    "insight-dotmatrix-2.webp",
-    "insight-dotmatrix-3.webp",
-    "insight-horizon-1.webp",
-    "insight-horizon-2.webp",
-    "insight-horizon-3.webp",
-    "insight-orbit-1.webp",
-    "insight-orbit-2.webp",
-    "insight-orbit-3.webp",
-    "insight-pixeldissolve-1.webp",
-    "insight-pixeldissolve-2.webp",
-    "insight-pixeldissolve-3.webp"
-   ],
-   "files": {
-    "service-mesh-cloud.webp": {
-     "name": "service-mesh-cloud.webp",
-     "blob": "4730aa203a4e83b5aa9c75490b53bf6a",
-     "size": 102788,
-     "type": "image/webp"
-    },
-    "service-mesh-govern.webp": {
-     "name": "service-mesh-govern.webp",
-     "blob": "45ebd5bee5a537d1043cf17aeb3081e6",
-     "size": 102518,
-     "type": "image/webp"
-    },
-    "service-mesh-hero.webp": {
-     "name": "service-mesh-hero.webp",
-     "blob": "77eff25109a705fcbcb893a1ce375441",
-     "size": 402636,
-     "type": "image/webp"
-    },
-    "service-mesh-innovate.webp": {
-     "name": "service-mesh-innovate.webp",
-     "blob": "728d2e70ae3c813d26ddf27cc710cd9e",
-     "size": 102178,
-     "type": "image/webp"
-    },
-    "service-mesh-intel.webp": {
-     "name": "service-mesh-intel.webp",
-     "blob": "9af78e5e52110040c1a19926e1814b37",
-     "size": 101916,
-     "type": "image/webp"
-    },
-    "service-mesh-reengineer.webp": {
-     "name": "service-mesh-reengineer.webp",
-     "blob": "5f7f3c3e31b09bf0e88af37fb6e815a9",
-     "size": 100974,
-     "type": "image/webp"
-    },
-    "hero-dotbloom.webp": {
-     "name": "hero-dotbloom.webp",
-     "blob": "f8c90b33779e073ba5ddb77c15bd22b5",
-     "size": 356494,
-     "type": "image/webp"
-    },
-    "hero-dotdrift.webp": {
-     "name": "hero-dotdrift.webp",
-     "blob": "717bd2399a43c6742da3ab7a3ec16e77",
-     "size": 140844,
-     "type": "image/webp"
-    },
-    "hero-dotmatrix.webp": {
-     "name": "hero-dotmatrix.webp",
-     "blob": "36e5ffd92fd77fe8e3657c5bbf640a34",
-     "size": 219502,
-     "type": "image/webp"
-    },
-    "hero-horizon.webp": {
-     "name": "hero-horizon.webp",
-     "blob": "e08d301b0b88e33d2c2ddd1c09599d3b",
-     "size": 404330,
-     "type": "image/webp"
-    },
-    "hero-orbit.webp": {
-     "name": "hero-orbit.webp",
-     "blob": "f888de686bac5f3b0273d2822f90c7bb",
-     "size": 215870,
-     "type": "image/webp"
-    },
-    "hero-pixeldissolve.webp": {
-     "name": "hero-pixeldissolve.webp",
-     "blob": "b266353e47657b5b4a78ffb5129e70ce",
-     "size": 294980,
-     "type": "image/webp"
-    },
-    "insight-dotbloom-1.webp": {
-     "name": "insight-dotbloom-1.webp",
-     "blob": "9328b5b50beca8393c7542cada1d83a9",
-     "size": 235700,
-     "type": "image/webp"
-    },
-    "insight-dotbloom-2.webp": {
-     "name": "insight-dotbloom-2.webp",
-     "blob": "a580bfecea102ac1145ec20fb72a77ca",
-     "size": 230640,
-     "type": "image/webp"
-    },
-    "insight-dotbloom-3.webp": {
-     "name": "insight-dotbloom-3.webp",
-     "blob": "ac053a791b3dbdba9150f71bc00c25f0",
-     "size": 238856,
-     "type": "image/webp"
-    },
-    "insight-dotdrift-1.webp": {
-     "name": "insight-dotdrift-1.webp",
-     "blob": "c08b642294c67e327c9d00b0e275aec3",
-     "size": 113240,
-     "type": "image/webp"
-    },
-    "insight-dotdrift-2.webp": {
-     "name": "insight-dotdrift-2.webp",
-     "blob": "1cedcb4f3cea35a51f5fe791f26bb1c6",
-     "size": 112908,
-     "type": "image/webp"
-    },
-    "insight-dotdrift-3.webp": {
-     "name": "insight-dotdrift-3.webp",
-     "blob": "8e8fafb9d724395273011c42fa7c8671",
-     "size": 102964,
-     "type": "image/webp"
-    },
-    "insight-dotmatrix-1.webp": {
-     "name": "insight-dotmatrix-1.webp",
-     "blob": "a64cf5c0c81fe869a9cb4a47c28f1494",
-     "size": 129792,
-     "type": "image/webp"
-    },
-    "insight-dotmatrix-2.webp": {
-     "name": "insight-dotmatrix-2.webp",
-     "blob": "16b40fc7052eed11ad49ba4235ccd94a",
-     "size": 152078,
-     "type": "image/webp"
-    },
-    "insight-dotmatrix-3.webp": {
-     "name": "insight-dotmatrix-3.webp",
-     "blob": "ca382480a7ce6fd0b6449ea904619ae1",
-     "size": 134400,
-     "type": "image/webp"
-    },
-    "insight-horizon-1.webp": {
-     "name": "insight-horizon-1.webp",
-     "blob": "12c009e611d6df8b45e4ac4ed70084ae",
-     "size": 270302,
-     "type": "image/webp"
-    },
-    "insight-horizon-2.webp": {
-     "name": "insight-horizon-2.webp",
-     "blob": "a06c62aed08aac8707e1724cc6961430",
-     "size": 276934,
-     "type": "image/webp"
-    },
-    "insight-horizon-3.webp": {
-     "name": "insight-horizon-3.webp",
-     "blob": "81cbcffbd9be8e842007fd17120e283c",
-     "size": 263904,
-     "type": "image/webp"
-    },
-    "insight-orbit-1.webp": {
-     "name": "insight-orbit-1.webp",
-     "blob": "4b60bee294e9a39ac6f1524932028a41",
-     "size": 136066,
-     "type": "image/webp"
-    },
-    "insight-orbit-2.webp": {
-     "name": "insight-orbit-2.webp",
-     "blob": "db39613e335681c48ea850a447cf1dbf",
-     "size": 134874,
-     "type": "image/webp"
-    },
-    "insight-orbit-3.webp": {
-     "name": "insight-orbit-3.webp",
-     "blob": "294225716308d166d2390b0c7dfdfa60",
-     "size": 140634,
-     "type": "image/webp"
-    },
-    "insight-pixeldissolve-1.webp": {
-     "name": "insight-pixeldissolve-1.webp",
-     "blob": "512e471b078e3010c9de297cade7bd25",
-     "size": 192618,
-     "type": "image/webp"
-    },
-    "insight-pixeldissolve-2.webp": {
-     "name": "insight-pixeldissolve-2.webp",
-     "blob": "1e33eca0252fe27e9ea3499ff3b6f69d",
-     "size": 198530,
-     "type": "image/webp"
-    },
-    "insight-pixeldissolve-3.webp": {
-     "name": "insight-pixeldissolve-3.webp",
-     "blob": "fee02065c15e17910b1f712fb97a3aad",
-     "size": 193210,
-     "type": "image/webp"
-    }
-   }
+  "blobs": {},
+  "docs": {
+    "readme": "project/README.md",
+    "sections": []
+  },
+  "lastChange": {
+    "by": "Ben Dexter",
+    "at": "2026-11-05T01:40:00Z",
+    "via": "Claude",
+    "note": "Partner marks carried over from V1: Partners asset group and Partner marks component"
   }
- },
- "blobs": {},
- "docs": {
-  "readme": "project/README.md",
-  "sections": []
- },
- "lastChange": {
-  "by": "Ben Dexter",
-  "at": "2026-11-04T23:51:42Z",
-  "via": "Claude",
-  "note": "Imagery folded in: grain mesh for services, six hero combinations, Insights header textures; new HeroBanner and InsightHeader components"
- }
 }
