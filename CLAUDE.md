@@ -3,6 +3,7 @@
 This repo holds the **Xperiens Digital (X.D) brand kit** in two folders:
 
 - `v2/` — **X.D Brand V2**, current. One-way backup of the Design System artifact https://claude.ai/artifact/RiVU2vDkEo4LJR9UUGnpNF (source of truth).
+- `dist/` — files generated from `v2/` by `scripts/build.py` for projects to load; `package.json` names and versions them. The repo is public so Vercel and jsDelivr can read it without credentials.
 - `v1-deprecated/` — the original brand kit, mirrored from the Claude Design project **"x.d brand kit"** (https://claude.ai/design/p/ecb7b4a3-89dc-427d-8053-63ca0e689606, ID `ecb7b4a3-89dc-427d-8053-63ca0e689606` for the `DesignSync` tool). Reference only; use V2 for new work.
 
 Design work happens in the artifact (V2) or Claude Design (V1); this repo follows. Never redesign or "improve" files here: copy what the source holds. Australian English in anything you write.
@@ -20,7 +21,7 @@ Design work happens in the artifact (V2) or Claude Design (V1); this repo follow
 - `assets/` — logos (`xd-lockup-3a.svg` is the primary lockup) and partner marks; `exports/` — favicon and lockup exports; `uploads/` — files uploaded to the project (fonts, partner logos, the hero video, screenshots).
 - `support.js`, `xd-vector-path.json` — runtime and the canonical x.d mark path.
 
-Repo-only files at the root (never in either source): `CLAUDE.md`, `README.md`, `.gitattributes`. `v2/BACKUP.md` is also repo-only. Not mirrored: the project's `.thumbnail` preview image.
+Repo-only files at the root (never in either source): `CLAUDE.md`, `README.md`, `CHANGELOG.md`, `package.json`, `.gitattributes`, `scripts/`, `dist/`. `v2/BACKUP.md` is also repo-only. Not mirrored: the project's `.thumbnail` preview image.
 
 `.dc.html` pages open in Claude Design; outside it they render only partly (they rely on Claude Design's runtime).
 
@@ -33,7 +34,12 @@ There is no scheduled task. When a session has edited the V2 artifact, Claude pr
 1. Pull the latest `main` and branch (e.g. `brand-v2-backup-YYYY-MM-DD`).
 2. Replace `v2/` with the artifact's current `project/` files (from the session's local source, or read with the Artifact tools). Keep `v2/BACKUP.md` and update its snapshot date.
 3. Check a few files against the live artifact by SHA-256 (index `design-system.json`, `tokens.json`, `components/bundle.*`).
-4. Commit (see Git), push the branch, open a PR. Merge to `main` only with Ben's approval.
+4. Bump `version` in `package.json` (patch for fixes, minor for additions such as new components or assets, major for breaking renames or removals) and add a `CHANGELOG.md` entry in plain language.
+5. Run `python3 scripts/build.py`, then `python3 scripts/build.py --check`. Open `dist/brand.css` and `dist/brand.js` in a test page to confirm fonts, logos and components load.
+6. Commit (see Git), push the branch, open a PR. Merge to `main` only with Ben's approval.
+7. After the merge, tag the merge commit `v<version>` (e.g. `v2.1.0`) and push the tag. If tag pushes are blocked in the session, ask Ben to create a GitHub release with that tag on `main`. Projects pin to these tags.
+
+**Consumers.** The website (`x.d-website`) and XDOS load the brand from this repo by tag (npm from GitHub, or jsDelivr for pages without a build step). They never keep their own copy. Taking an update is a one-line version bump in that project, reviewed on its own preview.
 
 ## V1 sync (retired)
 
