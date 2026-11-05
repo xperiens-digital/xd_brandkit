@@ -336,3 +336,12 @@ xd-icon[mono] .t { display: none; }
 .xd-numbered { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; counter-reset: xdn; }
 .xd-numbered__item { position: relative; display: grid; gap: 10px; padding: 22px; border-radius: var(--radius-lg); background: var(--surface); box-shadow: inset 0 0 0 1px var(--hairline); }
 .xd-numbered__n { font-family: var(--font-pixel); font-size: 44px; line-height: 1; color: var(--brand); }
+
+/* Partner marks: single colour, follows the theme */
+.xd-partners{display:flex;flex-wrap:wrap;align-items:center;gap:48px}
+.xd-partner{display:inline-block;height:44px;background:var(--ink-faint);-webkit-mask:var(--xd-partner-src) center/contain no-repeat;mask:var(--xd-partner-src) center/contain no-repeat}
+.xd-partners--night .xd-partner{background:var(--on-night-muted)}
+.xd-partner--msft{aspect-ratio:604/129}
+.xd-partner--dicker{aspect-ratio:116/45}
+.xd-partner--cv{aspect-ratio:1894.31/350}
+.xd-partner--cv-stack{height:88px;aspect-ratio:1569/1047}
