@@ -1,0 +1,9 @@
+<!-- @dsCard group="Website" height=360 subtitle="Inputs, select, checks, toggle" -->
+<div class="xd" style="padding:24px;background:var(--ground);min-height:100%"><form style="display:grid;grid-template-columns:1fr 1fr;gap:18px;max-width:640px" onsubmit="return false">
+ <label class="xd-field"><span class="xd-label">Name</span><input class="xd-input" placeholder="Your name"></label>
+ <label class="xd-field xd-field--error"><span class="xd-label">Work email</span><input class="xd-input" value="ben@" aria-invalid="true"><span class="xd-hint">Enter a full email address</span></label>
+ <label class="xd-field"><span class="xd-label">Business area to look at first</span><select class="xd-select"><option>Sales and bids</option><option>Operations</option><option>Finance</option></select></label>
+ <label class="xd-field"><span class="xd-label">Company size</span><input class="xd-input" placeholder="Employees"></label>
+ <label class="xd-field" style="grid-column:1/-1"><span class="xd-label">What's slowing you down?</span><textarea class="xd-textarea" placeholder="A sentence or two is plenty"></textarea></label>
+ <div style="display:flex;gap:22px;align-items:center;grid-column:1/-1;flex-wrap:wrap"><label class="xd-check"><input type="checkbox" checked> Send me the engagement guide</label><label class="xd-check"><input type="radio" name="r" checked> Call</label><label class="xd-check"><input type="radio" name="r"> Email</label><label class="xd-check"><input type="checkbox" class="xd-toggle" role="switch" checked> Notify me</label></div>
+</form></div>

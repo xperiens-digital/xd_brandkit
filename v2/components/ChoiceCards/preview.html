@@ -1,0 +1,5 @@
+<!-- @dsCard group="Survey" height=330 subtitle="Single or multi-select tiles" -->
+<div class="xd" style="padding:24px;background:var(--ground);min-height:100%"><div class="xd-survey" style="max-width:720px"><h3 class="xd-q">Where does your team lose the most time?</h3>
+<xd-choices multiple options='[{"value":"bids","label":"Writing bids and proposals","icon":"document"},{"value":"reporting","label":"Reporting and dashboards","icon":"dashboard"},{"value":"handoffs","label":"Handoffs between teams","icon":"process"},{"value":"search","label":"Finding information","icon":"search"}]'></xd-choices>
+<span class="xd-hint" id="o">Select all that apply</span></div>
+<script>document.querySelector('xd-choices').addEventListener('change',function(e){document.getElementById('o').textContent=e.detail.value.length?'Selected: '+e.detail.value.join(', '):'Select all that apply'})</script></div>

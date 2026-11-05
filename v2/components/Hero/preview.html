@@ -1,0 +1,15 @@
+<!-- @dsCard group="Website" height=440 subtitle="Spectrum orb and pixel cluster" -->
+<div class="xd" style="padding:24px;background:var(--ground);min-height:100%"><section class="xd-hero"><span class="xd-hero__orb"></span>
+ <div style="max-width:560px;display:grid;gap:20px">
+  <span class="xd-eyebrow">Operational intelligence specialists</span>
+  <h1 class="xd-display"><span class="xd-sweep-text">(re)Engineering</span> business for growth™</h1>
+  <p class="xd-body" style="font-size:19px">Don't start with the tools. Start with proof: a working prototype on your own process.</p>
+  <div style="display:flex;gap:12px;flex-wrap:wrap"><button class="xd-btn xd-btn--spectrum">See it working <xd-icon name="arrow-right"></xd-icon></button><button class="xd-btn xd-btn--secondary">How it works</button></div>
+ </div>
+ <div class="xd-hero__pixels" aria-hidden="true" id="px"></div>
+</section>
+<script>
+var on=[1,0,1,0, 0,1,0,0, 1,0,1,1, 0,0,1,1], h='';
+on.forEach(function(v,i){h+='<i style="animation-delay:'+(i*60)+'ms;'+(v?'':'visibility:hidden')+'"></i>'});
+document.getElementById('px').innerHTML=h;
+</script></div>
