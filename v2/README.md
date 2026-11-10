@@ -48,7 +48,7 @@ V2 changes the look, not the voice. The writing rules in CLAUDE.md still hold:
 | AI Governance | `govern` | Govern: lavender, sage |
 | AI-enabled Innovation & Development | `innovate` | blush, apricot |
 
-Service names follow Capability Statement v1.0 (14 Oct 2026). Check the live site before using them in public copy. Growth (re)Engineering™ and (re)Engineering for Growth™ are trademarks and always carry ™. The ™ is always set small and raised: the component script wraps every ™ in `.xd-tm` automatically (about a third of the size in headings, 60% in running text), so nobody has to style it by hand. Call `XD.tm(element)` for content rendered outside the page's normal flow.
+Service names follow Capability Statement v1.0 (14 Oct 2026). Check the live site before using them in public copy. Growth (re)Engineering™ and (re)Engineering for Growth™ are trademarks and always carry ™. Write the two statements with the Trademark component (`<xd-trademark mark="growth-reengineering">` / `mark="reengineering-for-growth">`): their ™ is small only in H1/H2 display headings and a legible standard size everywhere else (70% of the text, never under 11px). Any other ™ is set small and raised: the component script wraps every ™ in `.xd-tm` automatically, and gives the two statements their legible ™ even in plain text. Call `XD.tm(element)` for content rendered outside the page's normal flow.
 
 - **Data.** `chart-1` to `chart-6` are the categorical series colours, assigned in that fixed order and never cycled; iris and pumpkin (`chart-2`) are the default pair for two-series charts. They were run through a colour-vision-deficiency validator in both themes. `chart-4` (amber) is under 3:1 on white, so every chart carries a legend or direct labels. `good`, `warning` and `critical` are status only, always with a word or icon.
 - **Dark theme ("Night").** Every neutral has its own dark value, chosen and checked against the dark ground rather than inverted; the V1 pastels keep their values.
@@ -101,7 +101,7 @@ Rules: icons label things, they do not decorate them. One icon size per row (20p
 
 Framework-free custom elements and CSS classes, so they drop into the Next.js site, a plain HTML survey, HubSpot pages or an X.D OS dashboard. Load `tokens.css`, `components/bundle.css`, then `components/bundle.js` (it defines the elements and `window.XD`).
 
-- **Brand:** Logo (`<xd-mark>`), Logo construction, Page loader (`<xd-page-loader>`), Partner marks, Icon (`<xd-icon>`), Divider and inline loader.
+- **Brand:** Logo (`<xd-mark>`), Logo construction, Page loader (`<xd-page-loader>`), Partner marks, Trademark (`<xd-trademark>`), Icon (`<xd-icon>`), Divider and inline loader.
 - **Website:** Button, Chip and status, Service card (grain mesh art), Numbered tile, Nav, Hero, Hero banner (texture), Insights article header, Form fields, FAQ, CTA banner, Modal, Toast (`XD.toast()`), Footer, Insight card.
 - **Survey:** progress (`<xd-progress>`), choice tiles (`<xd-choices>`), NPS / Likert / rating (`<xd-scale>`), maturity staircase (`<xd-maturity>`), slider (`<xd-slider>`). Every input fires `change` with `detail.value`; `XD.burst(el)` celebrates a finished survey.
 - **Dashboard:** KPI tile with sparkline (`<xd-kpi>`), progress ring (`<xd-ring>`), OKR card (`<xd-okr>`), grouped bars (`<xd-bars>`), readiness radar (`<xd-radar>`), data table (`.xd-table`).

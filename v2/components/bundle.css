@@ -77,6 +77,14 @@ xd-icon[mono] .t { display: none; }
 /* Trademark rule: ™ is always small and raised (bundle.js wraps every ™ in .xd-tm automatically) */
 .xd-tm { font-family: var(--font-body); font-weight: 500; font-size: .32em; line-height: 0; vertical-align: top; position: relative; top: .55em; margin-left: .08em; letter-spacing: 0; -webkit-text-fill-color: currentColor; }
 .xd-body .xd-tm, p .xd-tm, li .xd-tm, td .xd-tm, a .xd-tm { font-size: .6em; top: .3em; margin-left: .02em; }
+/* Trademarked statements: Growth (re)Engineering™ and (re)Engineering for Growth™.
+   Use <xd-trademark mark="growth-reengineering"> / mark="reengineering-for-growth"> (or
+   <span class="xd-tmark">… <span class="xd-tm xd-tm--mark">™</span></span> without JS; bundle.js
+   also marks these statements automatically). The ™ is a legible size at every text level, from
+   H3 down to captions; only H1/H2 display headings keep the smaller mark. */
+xd-trademark, .xd-tmark { display: inline; white-space: nowrap; }
+.xd-tm.xd-tm--mark { font-size: max(.7em, 11px); position: static; top: auto; vertical-align: .55em; line-height: 0; margin-left: .05em; }
+:is(h1, h2, .xd-display, .xd-h2, .xd-insight-header__title) .xd-tm.xd-tm--mark { font-size: max(.32em, 11px); vertical-align: top; position: relative; top: .55em; margin-left: .08em; }
 .xd-pixel-num { font-family: var(--font-pixel); font-weight: 400; line-height: 1; letter-spacing: .02em; font-variant-numeric: tabular-nums; }
 .xd-eyebrow { font-family: var(--font-mono); font-size: 12px; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-muted); }
 .xd-display { font-family: var(--font-display); font-weight: 400; font-size: 56px; line-height: 1.06; letter-spacing: -.01em; margin: 0; }
@@ -153,9 +161,21 @@ xd-icon[mono] .t { display: none; }
 .xd-hero__pixels i { width: 22px; height: 22px; border-radius: 5px; background: var(--night); opacity: 0; animation: xd-pop .5s var(--xd-ease-pop) forwards; }
 
 /* ---------- Forms ---------- */
-.xd-field { display: grid; gap: 8px; }
-.xd-label { font-weight: 600; font-size: 14px; }
-.xd-hint { font-size: 13px; color: var(--ink-faint); }
+/* Field rhythm. Every field is three rows: label, control, message (hint or error).
+   The message row is always reserved, so a hint or validation message never pushes a
+   control out of line with its neighbours, and showing an error never shifts the layout. */
+:root { --xd-field-gap: 8px; --xd-field-label-lh: 20px; --xd-field-msg-lh: 18px; --xd-form-col-gap: 20px; --xd-form-row-gap: 12px; }
+.xd-field { display: grid; grid-template-rows: auto auto minmax(var(--xd-field-msg-lh), auto); row-gap: var(--xd-field-gap); align-content: start; align-self: start; min-width: 0; }
+/* Forms: use .xd-form as the grid. Fields join it with subgrid, so labels, controls and
+   messages line up across each row even when one label wraps or one field shows a message. */
+.xd-form { display: grid; grid-template-columns: repeat(var(--xd-form-cols, 2), minmax(0, 1fr)); grid-auto-rows: auto auto minmax(var(--xd-field-msg-lh), auto); column-gap: var(--xd-form-col-gap); row-gap: 0; align-items: start; }
+.xd-form > * { grid-row: span 3; margin-bottom: var(--xd-form-row-gap); }
+.xd-form > .xd-field { grid-template-rows: subgrid; }
+.xd-form > :not(.xd-field) { align-self: center; }
+.xd-form .xd-field--full, .xd-form > .xd-form__full { grid-column: 1 / -1; }
+@media (max-width: 640px) { .xd-form { --xd-form-cols: 1; } }
+.xd-label { font-weight: 600; font-size: 14px; line-height: var(--xd-field-label-lh); align-self: end; }
+.xd-hint { font-size: 13px; line-height: var(--xd-field-msg-lh); color: var(--ink-faint); min-height: var(--xd-field-msg-lh); }
 .xd-input, .xd-select, .xd-textarea { width: 100%; height: 48px; padding: 0 16px; border-radius: var(--radius-md); border: 1.5px solid var(--hairline-strong); background: var(--surface); color: var(--ink); font: 400 16px/1.4 var(--font-body); transition: border-color .2s, box-shadow .2s; }
 .xd-textarea { height: auto; min-height: 112px; padding: 12px 16px; resize: vertical; }
 .xd-input:hover, .xd-select:hover, .xd-textarea:hover { border-color: var(--ink-faint); }

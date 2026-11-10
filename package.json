@@ -1,10 +1,13 @@
 {
   "name": "@xperiens-digital/brand-kit",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "X.D (Xperiens Digital) Brand V2: tokens, fonts, components, logos, icons and imagery. Source of truth: https://claude.ai/artifact/RiVU2vDkEo4LJR9UUGnpNF",
   "license": "UNLICENSED",
   "repository": "github:xperiens-digital/xd_brandkit",
-  "files": ["dist/", "v2/"],
+  "files": [
+    "dist/",
+    "v2/"
+  ],
   "exports": {
     "./brand.css": "./dist/brand.css",
     "./brand.js": "./dist/brand.js",
