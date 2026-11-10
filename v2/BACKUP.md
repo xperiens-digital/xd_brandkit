@@ -6,4 +6,4 @@ The artifact is the source of truth. Edit and comment there, not here. Files in 
 
 Note: animated logo SVGs (conic spin) are not stored in the artifact's asset store, which strips SVG animation. They ship in the logo pack zip.
 
-Snapshot: 5 November 2026.
+Snapshot: 10 November 2026 (v2.1.0).

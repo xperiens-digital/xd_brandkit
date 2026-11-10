@@ -11,7 +11,7 @@ A one-way backup of the **X.D Brand V2** design system artifact (https://claude.
 | Brand book (voice, logo, colour, type, components) | `v2/README.md` |
 | Imagery and ambient textures guide | `v2/Imagery.md` |
 | Design tokens | `v2/tokens.json` |
-| Components (32, with previews) | `v2/components/`, bundled in `components/bundle.{css,js}` |
+| Components (33, with previews) | `v2/components/`, bundled in `components/bundle.{css,js}` |
 | Fonts (Momo Trust Display, Onest, Spline Sans Mono, Tiny5) | `v2/fonts/` |
 | Logos, icons, imagery | `v2/assets/Logos/`, `v2/assets/Icons/`, `v2/assets/Imagery/` |
 | Partner marks (Microsoft Solutions Partner, Dicker Data, Cognitive View) | `v2/assets/Partners/` |
@@ -24,7 +24,7 @@ Load the brand from here; don't copy it. Pin a version so brand changes reach ea
 **Websites and apps with npm (e.g. the Next.js site):**
 
 ```
-npm install github:xperiens-digital/xd_brandkit#v2.0.0
+npm install github:xperiens-digital/xd_brandkit#v2.1.0
 ```
 
 ```css
@@ -40,11 +40,11 @@ Only need colours and spacing? Import `tokens.css` (and `fonts.css`) instead of 
 **Plain HTML, HubSpot pages, prototypes (no build step):**
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xperiens-digital/xd_brandkit@v2.0.0/dist/brand.css">
-<script src="https://cdn.jsdelivr.net/gh/xperiens-digital/xd_brandkit@v2.0.0/dist/brand.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xperiens-digital/xd_brandkit@v2.1.0/dist/brand.css">
+<script src="https://cdn.jsdelivr.net/gh/xperiens-digital/xd_brandkit@v2.1.0/dist/brand.js"></script>
 ```
 
-**To take a brand update:** change the version (`#v2.0.0` → `#v2.1.0`), check the preview, merge. What changed in each version is in `CHANGELOG.md`.
+**To take a brand update:** change the version (`#v2.1.0` → `#v2.2.0`), check the preview, merge. What changed in each version is in `CHANGELOG.md`.
 
 | File in `dist/` | What it is |
 | --- | --- |

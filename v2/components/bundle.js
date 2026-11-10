@@ -321,6 +321,22 @@ var LOGO={"mark":"M 381 6 L 418 6 L 418 155 L 306 155 L 306 43 L 381 43 Z M 6 43
   /* Trademark rule: every "\u2122" in text is wrapped in <span class="xd-tm"> so it is set small and raised.
      Runs on load and on any content added later; skips code, form fields and SVG. */
   var TM_SKIP = { SCRIPT: 1, STYLE: 1, TEXTAREA: 1, INPUT: 1, CODE: 1, PRE: 1, svg: 1, SVG: 1 };
+  /* The two trademarked statements get a legible \u2122 (.xd-tm--mark) wherever they appear. */
+  var TM_STATEMENT = /(Growth \(re\)Engineering|\(re\)Engineering for Growth)\s*$/;
+  var TM_NAMES = { 'growth-reengineering': 'Growth (re)Engineering', 'reengineering-for-growth': '(re)Engineering for Growth' };
+
+  /* <xd-trademark mark="growth-reengineering | reengineering-for-growth"> renders the statement
+     with its \u2122 at a legible size for the surrounding text (smaller only in H1/H2 display headings). */
+  class XdTrademark extends HTMLElement {
+    static get observedAttributes() { return ['mark']; }
+    connectedCallback() { this.render(); }
+    attributeChangedCallback() { if (this.isConnected) this.render(); }
+    render() {
+      var name = TM_NAMES[(this.getAttribute('mark') || 'growth-reengineering').toLowerCase()] || TM_NAMES['growth-reengineering'];
+      this.classList.add('xd-tmark');
+      this.innerHTML = esc(name) + '<span class="xd-tm xd-tm--mark">\u2122</span>';
+    }
+  }
   function wrapTM(root) {
     if (!root || !document.createTreeWalker) return;
     var w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, { acceptNode: function (n) {
@@ -335,7 +351,7 @@ var LOGO={"mark":"M 381 6 L 418 6 L 418 155 L 306 155 L 306 43 L 381 43 Z M 6 43
       var parts = t.nodeValue.split('\u2122'), frag = document.createDocumentFragment();
       parts.forEach(function (txt, i) {
         if (txt) frag.appendChild(document.createTextNode(txt));
-        if (i < parts.length - 1) { var sp = document.createElement('span'); sp.className = 'xd-tm'; sp.textContent = '\u2122'; frag.appendChild(sp); }
+        if (i < parts.length - 1) { var sp = document.createElement('span'); sp.className = 'xd-tm' + (TM_STATEMENT.test(txt) ? ' xd-tm--mark' : ''); sp.textContent = '\u2122'; frag.appendChild(sp); }
       });
       t.parentNode.replaceChild(frag, t);
     });
@@ -353,9 +369,9 @@ var LOGO={"mark":"M 381 6 L 418 6 L 418 155 L 306 155 L 306 43 L 381 43 Z M 6 43
 
   define('xd-mark', XdMark); define('xd-page-loader', XdPageLoader); define('xd-icon', XdIcon); define('xd-progress', XdProgress); define('xd-choices', XdChoices);
   define('xd-scale', XdScale); define('xd-maturity', XdMaturity); define('xd-slider', XdSlider); define('xd-kpi', XdKpi);
-  define('xd-ring', XdRing); define('xd-okr', XdOkr); define('xd-bars', XdBars); define('xd-radar', XdRadar);
+  define('xd-ring', XdRing); define('xd-trademark', XdTrademark); define('xd-okr', XdOkr); define('xd-bars', XdBars); define('xd-radar', XdRadar);
 
   window.XD = { icons: Object.keys(ICONS), iconSVG: iconSVG, logo: LOGO,
     tm: wrapTM,
-    pageLoader: { show: function () { var l = document.querySelector('xd-page-loader'); if (!l) { l = document.createElement('xd-page-loader'); l.setAttribute('min', '0'); document.body.appendChild(l); } l.hidden = false; }, hide: function () { var l = document.querySelector('xd-page-loader'); if (l) l.hidden = true; } }, toast: toast, burst: burst, version: '2.0.0-draft' };
+    pageLoader: { show: function () { var l = document.querySelector('xd-page-loader'); if (!l) { l = document.createElement('xd-page-loader'); l.setAttribute('min', '0'); document.body.appendChild(l); } l.hidden = false; }, hide: function () { var l = document.querySelector('xd-page-loader'); if (l) l.hidden = true; } }, toast: toast, burst: burst, version: '2.1.0' };
 })();
